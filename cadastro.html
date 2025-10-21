@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes | Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header__conteudo-header container">
+            <div class="header__logo">
+                <a href="index.html"><img src="assets/img/global/logo-170x115.png" alt="logo"></a>
+            </div>
+
+            <div class="header__menu">
+                <div class="header__bt-cadastro">
+                    <a href="cadastro.html">Junte-se a nós</a>
+                </div>
+
+                <nav class="header__nav-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="quem-somos.html">Quem somos</a></li>
+                        <li><a href="transparencia.html">Transparência</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__menu-hamburguer">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="cadastro ">
+            <!-- Banner da sessão de cadastro -->
+            <div class="cadastro__banner">
+                <div class="cadastro__banner-imagem">
+                    <img src="assets/img/global/logo-270-182.png" alt="logo">
+                </div>
+                <div class="cadastro__banner-texto">
+                    <p>Juntos podemos fazer a diferença pelo futuro do planeta</p>
+                </div>
+            </div>
+            
+            <div class="cadastro__formulario">
+                <!-- titulo do formulário -->
+                <div class="titulo-sessao">
+                    <h2 class="text-h2">Seja um Voluntário</h2>
+                </div>
+
+                <!-- Formulário de cadastro -->
+                <form action="#" method="post">
+                    <fieldset class="cadastro__dados-pessoais">
+                        <legend>Dados pessoais</legend>
+                        <div class="grupo-entradas">
+                            <div class="entrada-nome">
+                                <input type="text" id="nome" name="nome" placeholder="Nome" title="Preencha com seu nome completo" required>
+                            </div>
+
+                            <div class="entrada-sobrenome">
+                                <input type="text" id="sobrenome" name="sobrenome" placeholder="sobrenome" title="Preencha com seu nome completo" required>
+                            </div>
+                            
+                            <div class="entrada-email">
+                                <input type="email" id="email" name="email" placeholder="E-mail" title="Preencha com seu e-mail" required><br><br>
+                            </div>
+                
+                            <div class="entrada-cpf">
+                                <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" pattern="^\d{3}.\d{3}.\d{3}-\d{2}" required><br><br>
+                            </div>
+                
+                            <div class="entrada-telefone">
+                                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" maxlength="15" pattern="^\(\d{3}\). \d{5}-\d{4}-\d{2}" required><br><br>
+                            </div>
+                
+                            <div class="entrada-nascimento">
+                                <input type="date" id="nascimento" name="nascimento" required><br><br>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="cadastro__endereco">
+                        <legend>Endereço</legend>                        
+                        <div class="grupo-entradas">
+                            <div class="entrada-endereco">
+                                <input type="text" id="endereco" name="endereco" title="Preencha com seu endereço" placeholder="Endereço" required><br><br>
+                            </div>
+                
+                            <div class="entrada-cep">
+                                <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" pattern="^\d{5}-\d{3}" required><br><br>
+                            </div>
+                
+                            <div class="entrada-cidade">
+                                <input type="text" id="cidade" name="cidade" title="Preencha com sua cidade" placeholder="Cidade" required><br><br>
+                            </div>
+                
+                            <div class="entrada-estado">
+                                <input type="text" id="estado" name="estado" title="Preencha com seu estado" placeholder="Estado" required><br><br>
+                            </div>
+                        </div>
+            
+                    </fieldset>
+
+                    <fieldset class="cadastro__interesses">
+                        <legend>Interesses e Disponibilidade</legend>
+
+                        <div class="grupo-entradas">
+                            <div class="entrada-interesses">
+                                <select id="interesses" name="interesses" required>
+                                    <option value="" disabled selected>Selecione um interesse</option>
+                                    <option value="reflorestamento">Reflorestamento</option>
+                                    <option value="educacao-ambiental">Educação Ambiental</option>
+                                    <option value="limpeza-rios">Limpeza de Rios e Lagos</option>
+                                    <option value="conservacao-fauna">Conservação da Fauna</option>
+                                </select><br><br>
+                            </div>
+                            
+                            <div class="entrada-disponibilidade">
+                                <input type="text" id="disponibilidade" name="disponibilidade" placeholder="Dias e horário" required><br><br>
+                            </div>
+                        </div>
+                    </fieldset>
+            
+                    <input class="botao" type="submit" value="Enviar"></input>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="footer">
+            <div class="footer__conteudo container">
+                <div class="footer__title">
+                    <h3 class="text-h3">Fundação Raízes</h3>
+                    <p class="pipe"> | </p>
+                    <p>Cuidando da saúde do nosso planeta</p>
+                </div>
+
+                <div class="footer__grid grid">
+                    <aside>
+                        <h3>Endereço</h3><br>
+                        <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
+                        <p>Cep: 99999-9999</p>
+                    </aside>
+                    <aside>
+                        <h3>Contato</h3><br>
+                        <p>Email: instituto@raizes.eco.br</p>
+                        <p>Telefone: (11) 99999-9999</p>
+                    </aside>
+                    <aside>
+                        <h3>Links Úteis</h3><br>
+                        <p><a href="projetos/projetos.html">Projetos</a></p>
+                        <p><a href="/">Quem somos</a></p>
+                        <p><a href="cadastro/cadastro.html">Junte-se a nós</a></p>
+                    </aside>
+                    <aside>
+                        <h3>Redes Sociais</h3><br>
+                        <p><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+                        <p><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+                        <p><a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a></p>
+                    </aside>
+                </div>
+            </div>
+            
+        </section>
+    </footer>
+</body>
+</html>
