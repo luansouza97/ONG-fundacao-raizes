@@ -60,11 +60,11 @@
                         <legend>Dados pessoais</legend>
                         <div class="grupo-entradas">
                             <div class="entrada-nome">
-                                <input type="text" id="nome" name="nome" placeholder="Nome" title="Preencha com seu nome completo" required>
+                                <input type="text" id="nome" name="nome" placeholder="Nome" title="Preencha com seu nome" required>
                             </div>
 
                             <div class="entrada-sobrenome">
-                                <input type="text" id="sobrenome" name="sobrenome" placeholder="sobrenome" title="Preencha com seu nome completo" required>
+                                <input type="text" id="sobrenome" name="sobrenome" placeholder="sobrenome" title="Preencha com seu sobrenome" required>
                             </div>
                             
                             <div class="entrada-email">
@@ -72,15 +72,15 @@
                             </div>
                 
                             <div class="entrada-cpf">
-                                <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" pattern="^\d{3}.\d{3}.\d{3}-\d{2}" required><br><br>
+                                <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" pattern="^\d{3}.\d{3}.\d{3}-\d{2}" title="Preencha no formado 000.000.000-00"><br><br>
                             </div>
                 
                             <div class="entrada-telefone">
-                                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" maxlength="15" pattern="^\(\d{3}\). \d{5}-\d{4}-\d{2}" required><br><br>
+                                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" maxlength="15" pattern="^\(\d{3}\). \d{5}-\d{4}-\d{2}" title="Preencha no formado (99) 99999-9999" required><br><br>
                             </div>
                 
                             <div class="entrada-nascimento">
-                                <input type="date" id="nascimento" name="nascimento" required><br><br>
+                                <input type="date" id="nascimento" name="nascimento" title="Sua data de nascimento" required><br><br>
                             </div>
                         </div>
                     </fieldset>
@@ -93,7 +93,7 @@
                             </div>
                 
                             <div class="entrada-cep">
-                                <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" pattern="^\d{5}-\d{3}" required><br><br>
+                                <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" pattern="^\d{5}-\d{3}" title="Preencha no formado 00000-000" required><br><br>
                             </div>
                 
                             <div class="entrada-cidade">
