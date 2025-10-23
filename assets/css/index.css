@@ -4,9 +4,6 @@
 }
 
 /* Estilização do banner principal */
-.conteudo-banner {
-    width: 100%;
-}
 .banner {
     width: 100%;
     max-height: 87vh;
@@ -21,36 +18,43 @@
 }
 
 /* Sessão: resultados */
-.resultados__cards aside p:nth-child(1){
+.resultados{
+    background-color: var(--verde-medio);
+}
+.resultados .titulo-sessao h2{
+    color: var(--branco);
+}
+.resultados-cards aside p:nth-child(1){
     font-size: 2rem;
     margin-bottom: 0;
     text-align: center;
+    color: var(--branco);
 }
-.resultados__cards aside p:nth-child(2){
+.resultados-cards aside p:nth-child(2){
     font-size: 1.3rem;
     text-align: center;
+    color: var(--branco);
 }
 
 /* sessão: quem-somos */
-.quem-somos__conteudo{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    justify-items: center;
-    gap: 20px;
-    background-color: var(--branco);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
+.quem-somos-historia, .quem-somos-texto{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.quem-somos .container-sessao-duas-colunas{
     padding: 20px;
-    margin: 10px auto;
 }
 .quem-somos-imagem img{
     width: 100%;
-    height: auto;
+    height: 80%;
+    object-fit: cover;
 }
-.quem-somos__texto{
-    display: flex;
-    flex-direction: column;
+.quem-somos h3{
+    font-size: 1.5rem;
+}
+.quem-somos p{
+    font-size: 1.2rem;
 }
 .quem-somos-botao{
     display: flex;
@@ -59,14 +63,26 @@
     margin: 20px 0;
 }
 
-/* Sessão: apoiador */
-.apoiador__conteudo{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
+/* sessão projetos */
+.projetos{
+    background-color: var(--azul);
 }
-.apoiador__links h2{
-    font-size: 3rem;
+.projetos .titulo-sessao h2{
+    text-align: start;
+    color: var(--branco);
+}
+.card-projeto{
+    background-color: var(--branco);
+}
+
+/* Sessão: apoiador */
+.apoiador__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.apoiador .titulo-sessao h2{
+    text-align: start;
 }
 .apoiador__links ul{
     display: flex;
@@ -87,42 +103,73 @@
     border-bottom: 2px solid var(--verde-medio);
     font-size: 1.5rem;
 }
-.apoiador__imagem img{
+.apoiador-imagem img{
     max-width: 100%;
     height: auto;
 }
-/* sessão notícias */
 
+/* sessão noticias */
+.noticias .titulo-sessao h2{
+    text-align: start;
+}
 
 /* responsividade tablet */
 @media(max-width: 953px){
-    .quem-somos__conteudo{
+    /* Sessão : resultados */
+    .resultados .grid-quatro-colunas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* sessão: quem somos */
+    .quem-somos .container-sessao-duas-colunas{
         grid-template-columns: repeat(1, 1fr);
     }
-    /* Sessão : resultados */
-    .grid{
+    .quem-somos-imagem img{
+        height: auto;
+    }
+
+    /* sessão: apoiador */
+    .apoiador__links li{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .apoiador__links li p{
+        text-align: center;
+    }
+    .apoiador .container-sessao-duas-colunas{
+        align-items: center;
+    }
+
+    /* sessão: noticias */
+    .noticias .grid-quatro-colunas{
         grid-template-columns: repeat(2, 1fr);
     }
     .card-noticia-vertical{
         display: flex;
         flex-direction: column;
     }
-    .apoiador__conteudo{
-        display: flex;
-        flex-direction: column-reverse;
-    }
 }
 
 /* responsividade mobile */
 @media(max-width: 620px){
     /* Sessão : resultados */
-    .grid{
+    .resultados .grid-quatro-colunas{
         grid-template-columns: repeat(1, 1fr);
     }
-    .apoiador__links li{
+
+    /* sessão: projetos */
+    .projetos .grid-tres-colunas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* sessão: apoiador */
+    .apoiador .container-sessao-duas-colunas{
+        display: flex;
         flex-direction: column-reverse;
     }
-    .apoiador__links p{
-        text-align: center;
+
+    /* sessão: noticias */
+    .noticias .grid-quatro-colunas{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

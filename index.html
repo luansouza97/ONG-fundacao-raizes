@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header__conteudo-header container">
-            <div class="header__logo">
-                <a href="index.html"><img src="assets/img/global/logo-170x115.png" alt="logo"></a>
+    <header class="header">
+        <div class="conteudo-header container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="assets/img/global/logo-170x90.png" alt="logo">
+                </a>
             </div>
 
             <div class="header__menu">
@@ -44,18 +46,18 @@
     <main>
         <!-- Banner principal da página -->
          <div class="conteudo-banner">
-             <div class="banner container">
+             <div class="banner">
                  <img src="assets/img/inicio/banner-inicio.avif" alt="Banner principal do site">
              </div>
          </div>
 
         <!-- Resultados obtidos com as ações da ONG -->
         <section class="resultados">
-            <div class="conteudo-sessao container">
-                <div class="resultados__title">
+            <div class="container-sessao-uma-coluna container">
+                <div class="titulo-sessao">
                     <h2 class="text-h2">Resultados</h2>
                 </div>
-                <div class="resultados__cards grid">
+                <div class="resultados-cards grid-quatro-colunas">
                     <aside>
                         <p>+1000</p>
                         <p>Árvores plantadas</p>
@@ -76,39 +78,45 @@
             </div>
         </section>
 
+        <!-- Sessão: quem somos -->
         <section class="quem-somos">
-            <div class="quem-somos__conteudo container">
-                <div class="quem-somos-imagem">
-                    <img src="assets/img/inicio/banner-quem-somos.jpg" alt="">
+            <div class="container-sessao-uma-coluna container">
+                <div class="quem-somos-historia">
+                    <h2 class="text-h2">Conheça a Fundação Raízes</h2>
+                    <p class="text-p">A Fundação Raízes é uma entidade socioambientalista dedicada à conservação da natureza e à promoção da qualidade de vida em Ananindeua, no Pará. Em 2024, foi reconhecido como a Melhor ONG de Meio Ambiente e Sustentabilidade e está entre as 100 Melhores ONGs do Brasil, pelo Prêmio Melhores ONGs, organizado pela Certificadora Social e Ambev VOA..</p>
                 </div>
-                <div class="quem-somos-texto">
-                    <h2 class="text-h2">Conheça o Fundação Raízes</h2>
-                    <p class="text-p">O Instituto Raízes é uma entidade socioambientalista dedicada à conservação da natureza e à promoção da qualidade de vida em Ananindeua, no Pará. Em 2024, foi reconhecido como a Melhor ONG de Meio Ambiente e Sustentabilidade e está entre as 100 Melhores ONGs do Brasil, pelo Prêmio Melhores ONGs, organizado pela Certificadora Social e Ambev VOA..</p>
-
-                    <h3 class="text-h3">Missão</h3>
-                    <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
-
-                    <h3 class="text-h3">visão</h3>
-                    <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
-
-                    <h3 class="text-h3">valores</h3>
-                    <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
-
-                    <div class="quem-somos-botao">
-                        <button class="botao">Quem Somos</button>
+                <div class="container-sessao-duas-colunas">
+                    <div class="quem-somos-imagem conta">
+                        <img src="assets/img/inicio/banner-quem-somos.jpg" alt="">
+                    </div>
+                    <div class="quem-somos-texto">
+    
+                        <h3 class="text-h3">Missão</h3>
+                        <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
+    
+                        <h3 class="text-h3">visão</h3>
+                        <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
+    
+                        <h3 class="text-h3">valores</h3>
+                        <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
+    
+                        <div class="quem-somos-botao">
+                            <button class="botao">Quem Somos</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projetos em destaque -->
-        <section>
-            <div class="conteudo-sessao container">
-                <div>
-                    <h2 class="text-h2">Nossos projetos</h2>
+        <section class="projetos">
+            <div class="container-sessao-uma-coluna container">
+                <div class="titulo-sessao">
+                    <h2 class="text-h2">Projetos</h2>
+                    <hr class="linha"><br>
                 </div>
     
-                <div class="grid">
+                <div class="grid-tres-colunas">
                     <article class="card-projeto">
                         <img src="assets/img/projetos/preservar-nascente.avif" alt="imagem ilustrativa">
                         <h3 class="text-h3">Adote uma nascente</h3>
@@ -126,15 +134,9 @@
                     <article class="card-projeto">
                         <img src="assets/img/projetos/educacao-ambiental.avif" alt="imagem ilustrativa">
                         <h3 class="text-h3">Educação ambiental</h3>
-                        <p class="text-p">Formar crianças e jovens conscientes sobre sustentabilidade.</p>
+                        <p class="text-p">Formar crianças e jovens conscientes sobre sustentabilidade e preservação do meio ambiente.</p>
                         <button class="botao">Conhecer</button>
-                    </article>
-        
-                    <article class="card-projeto">
-                        <img src="assets/img/projetos/animais.avif" alt="imagem ilustrativa">
-                        <h3 class="text-h3">Fauna livre</h3>
-                        <p class="text-p">Proteger animais silvestres em risco devido ao tráfico e desmatamento.</p>
-                        <button class="botao">Conhecer</button>
+                        </article>
                     </article>
                 </div>
             </div>
@@ -142,44 +144,47 @@
 
         <!-- Apoiador -->
         <section class="apoiador">
-            <div class="apoiador__conteudo conteudo-sessao container">
-                
-                <div class="apoiador__links">
-                    <div>
-                        <h2 class="text-h2">Seja um apoiador</h2>
+            <div class="container-sessao-uma-coluna container">
+                <div class="titulo-sessao">
+                    <h2 class="text-h2">Seja um apoiador</h2>
+                    <hr class="linha"><br>
+                </div>
+
+                <div class="container-sessao-duas-colunas container">
+                    <div class="apoiador__links">    
+                        <nav>
+                            <ul>
+                                <li>
+                                    <button class="botao">Contribua</button>
+                                    <p>financeiramente para nossos projetos</p>
+                                </li>
+                                <li>
+                                    <button class="botao">Participe</button>
+                                    <p>como voluntário em nossas ações</p>
+                                </li>
+                                <li>
+                                    <button class="botao">Divulgue</button>
+                                    <p>nosso trabalho nas redes sociais</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>                
+    
+                    <div class="apoiador-imagem">
+                        <img src="assets/img/inicio/banner-apoiador.avif" alt="imagem-sessao-apoiador">
                     </div>
-
-                    <nav>
-                        <ul>
-                            <li>
-                                <button class="botao">Contribua</button>
-                                <p>financeiramente para nossos projetos</p>
-                            </li>
-                            <li>
-                                <button class="botao">Participe</button>
-                                <p>como voluntário em nossas ações</p>
-                            </li>
-                            <li>
-                                <button class="botao">Divulgue</button>
-                                <p>nosso trabalho nas redes sociais</p>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>                
-
-                <div class="apoiador__imagem">
-                    <img src="assets/img/inicio/banner-apoiador.avif" alt="imagem-sessao-apoiador">
                 </div>
             </div>
         </section>
 
         <!-- Ultimas notícias -->
-         <section>
-            <div class="conteudo-sessao container">
-                <div>
+         <section class="noticias">
+            <div class="container-sessao-uma-coluna container">
+                <div class="titulo-sessao">
                     <h2 class="text-h2">Últimas notícias</h2>
+                    <hr class="linha"><br>
                 </div>
-                <div class="grid">
+                <div class="grid-quatro-colunas">
                     <a href="#">
                         <article class="card-noticia-vertical">
                             <div class="card-noticia-imagem">
@@ -241,7 +246,7 @@
                     <p>Cuidando da saúde do nosso planeta</p>
                 </div>
 
-                <div class="footer__grid grid">
+                <div class="footer__grid grid-quatro-colunas">
                     <aside>
                         <h3>Endereço</h3><br>
                         <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>

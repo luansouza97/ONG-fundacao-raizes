@@ -1,0 +1,131 @@
+.header__nav-menu li:nth-child(2){
+    border-bottom: 2px solid var(--verde-medio);
+}
+
+/* banner */
+.banner{
+    background-color: var(--verde-medio);
+}
+
+.banner-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.banner-texto h1{
+    color: var(--branco);
+    text-align: center;
+}
+.banner-texto p{
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.banner-botoes{
+    display: flex;
+    justify-content: space-around;
+}
+.banner-imagem img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* sessão voluntariado */
+.voluntariado{
+    background-color: var(--verde-medio);
+}
+.voluntariado-conteudo{
+    display: flex;
+    align-items: center;
+}
+.voluntariado-cadastro{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 70%;
+}
+.icon-voluntario{
+    color: var(--branco);
+    font-size: 7rem;
+}
+.voluntariado-cadastro h2{
+    color: var(--branco);
+}
+.voluntariado-cadastro p{
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--branco);
+}
+.voluntariado-cadastro-botao{
+    display: flex;
+    justify-content: center;
+}
+
+/* sessão doador */
+.doador-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 70%;
+}
+.icon-doador{
+    color: var(--verde-medio);
+    font-size: 7rem
+}
+.doador-texto p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.doador-texto li{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    list-style: square;
+}
+.doador-botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* responsividade tablet */
+@media(max-width: 920px){
+    /* sessão: banner */
+    .banner .container-sessao-duas-colunas{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 0 50px 0;
+    }
+
+    /* sessão: projetos */
+    .projetos .grid-tres-colunas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+
+/* responsividade mobile */
+@media(max-width: 620px){
+    /* sessão: projetos */
+    .projetos .grid-tres-colunas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* sessão: voluntariado */
+    .voluntariado-cadastro{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* sessão: doador */
+    .doador-conteudo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

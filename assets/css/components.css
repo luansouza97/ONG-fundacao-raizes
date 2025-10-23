@@ -21,6 +21,9 @@
     text-align: justify;
     margin-bottom: 5px;
 }
+.linha{
+    border: 1px solid var(--fundo-escuro);
+}
 .botao{
     padding: 10px 15px;
     font-size: 1.2rem;
@@ -34,5 +37,20 @@
 }
 .botao:hover{
     background-color: var(--verde-claro);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: none;
+}
+.botao-branco{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: var(--branco);
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.botao-branco:hover{
+    background-color: var(--branco);
+    color: var(--verde-medio);
+    box-shadow: none;
 }
