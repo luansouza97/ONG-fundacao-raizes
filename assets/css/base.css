@@ -61,7 +61,7 @@ a{
 }
 .conteudo-header{
     padding: var(--space-0-25) var(--space-0-5);
-    min-height: 13vh;
+    min-height: 13dvh;
 }
 .header .header-logo{
     display: flex;
@@ -100,13 +100,11 @@ a{
     display: flex;
 }
 .header__nav-menu li{
-    margin: 0 5px;
-}
-.header__nav-menu a{
-    padding-left: 10px;
     font-size: 1.5rem;
+    padding-left: 10px;
+    text-align: center;
 }
-.header__nav-menu a:hover{
+.header__nav-menu li:hover{
     color: var(--verde-medio);
 }
 .header__menu-hamburguer{
@@ -176,28 +174,35 @@ footer{
     }
     .header__menu{
         position: absolute;
+        z-index: 999;
         transform: translate(100%);
-        top: 15vh;
+        top: 15dvh;
         right: 0;
         width: 50%;
-        height: 85vh;
+        height: 85dvh;
         background-color: var(--branco);
         box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3);
     }
     #menu-check:checked + .header__menu{
         transform: translate(0%);
     }
+    .header__nav-menu{
+        width: 100%;
+    }
     .header__menu ul{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .header__menu li{
-        display: flex;
-        justify-content: center;        
+        width: 100%;
+        padding: var(--space-1) 0;    
+        font-size: 1.7rem;
+    }
+    .header__menu li:hover{
+        background-color: rgb(126, 180, 80, 0.3);
     }
     .header__menu a{
-        font-size: 2rem;
     }
-
     .header .header-logo{
         width: 100%;
     }
@@ -218,8 +223,18 @@ footer{
     }
 }
 
+/* celulares grandes e pequenos tablets */
+@media(max-width: 768px){
+    .header__menu li{
+        font-size: 1.5rem;
+    }
+}
+
 /* responsividade mobile */
 @media(max-width: 620px){
+    .header__menu li{
+        font-size: 1.2rem;
+    }
     /* Rodapé */
     .footer .grid-quatro-colunas{
         grid-template-columns: repeat(1, 1fr);
