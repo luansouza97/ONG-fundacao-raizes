@@ -10,11 +10,8 @@
     overflow: hidden;
 }
 .banner img {
-    top: 0;
-    left: 0;
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 /* Sessão: resultados */
@@ -40,15 +37,14 @@
 .quem-somos-historia, .quem-somos-texto{
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
-}
-.quem-somos .container-sessao-duas-colunas{
-    padding: 20px;
 }
 .quem-somos-imagem img{
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
+}
+.quem-somos h1{
+    text-align: center;
 }
 .quem-somos h3{
     font-size: 1.5rem;
@@ -60,7 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    height: 100%;
 }
 
 /* sessão projetos */
@@ -87,21 +83,26 @@
 .apoiador__links ul{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: var(--space-4);
 }
 .apoiador__links li{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--space-1);
 }
 .apoiador__links button{
     width: 8rem;
+    padding: var(--space-2);
     align-items: center;
 }
 .apoiador__links p{
     width: 57%;
     border-bottom: 2px solid var(--verde-medio);
     font-size: 1.5rem;
+}
+.apoiador-imagem{
+    display: flex;
+    justify-content: center;
 }
 .apoiador-imagem img{
     max-width: 100%;
@@ -113,8 +114,38 @@
     text-align: start;
 }
 
+/* monitores grandes e desktops widescreen */
+@media (max-width: 1440px) {
+    .container{
+        max-width: 1200px;
+    }
+    
+}
+
+/* notebooks e monitores menores */
+@media (max-width: 1200px) {
+    .container{
+        max-width: 992px;
+    }
+     html{
+        font-size: 15px;
+    }
+
+}
+
 /* responsividade tablet */
-@media(max-width: 953px){
+@media(max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+    html{
+        font-size: 14px;
+    }
+    /* sessão: header */
+    .header .container{
+        max-width: 100%
+    }
+
     /* Sessão : resultados */
     .resultados .grid-quatro-colunas{
         grid-template-columns: repeat(2, 1fr);
@@ -127,6 +158,14 @@
     .quem-somos-imagem img{
         height: auto;
     }
+    .quem-somos-botao{
+        padding: var(--space-1);
+    }
+
+    /* sessão projetos */
+    .text-h3{
+        margin-bottom: 0;
+    }
 
     /* sessão: apoiador */
     .apoiador__links li{
@@ -134,6 +173,12 @@
         flex-direction: column-reverse;
     }
     .apoiador__links li p{
+        text-align: center;
+        width: 100%;
+    }
+    .apoiador__links li button{
+        width: 60%;
+        padding: var(--space-1);
         text-align: center;
     }
     .apoiador .container-sessao-duas-colunas{
@@ -150,8 +195,14 @@
     }
 }
 
-/* responsividade mobile */
-@media(max-width: 620px){
+/* celulares grandes e pequenos tablets */
+@media(max-width: 768px){
+    .container{
+        max-width: 480px;
+    }
+    html{
+        font-size: 14px;
+    }
     /* Sessão : resultados */
     .resultados .grid-quatro-colunas{
         grid-template-columns: repeat(1, 1fr);
@@ -171,5 +222,15 @@
     /* sessão: noticias */
     .noticias .grid-quatro-colunas{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* celulares pequenos, retrato */
+@media (max-width: 480px) {
+    .container{
+        max-width: 100%;
+    }
+    html{
+        font-size: 13px;
     }
 }

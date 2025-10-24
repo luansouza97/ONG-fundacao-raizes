@@ -8,21 +8,30 @@
 }
 
 :root{
-    /* Cores principais */
+    /* Cores primarias */
     --verde-escuro: rgb(50, 99, 68);
     --verde-medio: rgb(126, 180, 80);
     --verde-claro: rgb(167, 204, 57);
 
     /* Cores secundárias */
-
-    /* Cores de fundo */
-    --branco: rgb(255, 255, 255);
     --azul: rgb(80, 158, 178);
-    --fundo-escuro: rgb(200, 200, 200);
 
-    /* Cores de texto */
+    /* Cores neutras */
+    --branco: rgb(255, 255, 255);
+    --fundo-escuro: rgb(200, 200, 200);
     --titulos: rgb(86, 86, 86);
     --textos: rgb(125, 125, 125);
+
+    /* espaçamentos */
+    --space-0-25: 0.25rem;
+    --space-0-5: 0.5rem;
+    --space-1: 1rem;
+    --space-2: 1.5rem;
+    --space-3: 2rem;
+    --space-4: 3rem;
+    --space-5: 4rem;
+    --space-6: 5rem;
+
 }
 
 body{
@@ -58,9 +67,8 @@ a{
     min-height: 13vh;
 }
 .header .header-logo{
-    background-color: blueviolet;
     width: 170px;
-    height: 90px;
+    height: auto;
 }
 .header .header-logo img{
     width: 100%;
@@ -113,7 +121,6 @@ a{
 footer{
     background-color: var(--verde-escuro);
     color: var(--branco);
-    padding: 20px 20px;
 }
 .footer__title{
     display: flex;
@@ -147,9 +154,17 @@ footer{
 .footer__grid a:hover{
     border-bottom: 1px solid var(--branco);
 }
+/* monitores grandes e desktops widescreen */
+@media (max-width: 1440px) {
+    
+}
+
+/* notebooks e monitores menores */
+@media (max-width: 1200px) {
 
 /* responsividade tablet */
-@media(max-width: 920px){
+@media(max-width: 992px){
+    
     /* Cabeçalho */
     .header__menu{
         display: none;

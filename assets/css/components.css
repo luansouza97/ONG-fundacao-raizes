@@ -2,21 +2,26 @@
     font-size: 2.5rem;
     color: var(--titulos);
     text-align: start;
-    margin-bottom: 15px;    
+    margin-bottom: var(--space-2);
 }
 .text-h2 {
     font-size: 2rem;
     color: var(--titulos);
     text-align: center;
-    margin-bottom: 15px;
 }
 .text-h3{
     font-size: 1.2rem;
     color: var(--titulos);
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-1);
 }
 .text-p{
+    font-size: 1rem;
+    color: var(--textos);
+    text-align: justify;
+}
+.text-dados{
+    font-size: 0.8rem;
     color: var(--textos);
     text-align: justify;
     margin-bottom: 5px;
@@ -25,7 +30,7 @@
     border: 1px solid var(--fundo-escuro);
 }
 .botao{
-    padding: 10px 15px;
+    padding: var(--space-1) var(--space-2);
     font-size: 1.2rem;
     color: var(--branco);
     background-color: var(--verde-medio);
@@ -40,7 +45,7 @@
     box-shadow: none;
 }
 .botao-branco{
-    padding: 10px 15px;
+    padding: var(--space-1) var(--space-2);
     font-size: 1.2rem;
     color: var(--branco);
     background-color: transparent;

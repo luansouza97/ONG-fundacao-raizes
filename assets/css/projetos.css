@@ -6,11 +6,11 @@
 .banner{
     background-color: var(--verde-medio);
 }
-
 .banner-texto{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    width: 100%;
+    gap: var(--space-2);
     text-align: center;
 }
 .banner-texto h1{
@@ -31,8 +31,6 @@
     height: auto;
 }
 
-
-
 /* sessão voluntariado */
 .voluntariado{
     background-color: var(--verde-medio);
@@ -41,20 +39,24 @@
     display: flex;
     align-items: center;
 }
+.voluntariado-conteudo h2{
+    color: var(--branco);
+}
 .voluntariado-cadastro{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 20px;
+    gap: var(--space-0-5);
     align-items: center;
     justify-items: center;
     width: 70%;
 }
+.voluntariado-cadastro-texto{
+    display: flex;
+    align-items: center;
+}
 .icon-voluntario{
     color: var(--branco);
-    font-size: 7rem;
-}
-.voluntariado-cadastro h2{
-    color: var(--branco);
+    font-size: 5rem;
 }
 .voluntariado-cadastro p{
     text-align: center;
@@ -64,10 +66,18 @@
 .voluntariado-cadastro-botao{
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+.voluntariado-cadastro-botao button{
+    width: 30%;
 }
 
 /* sessão doador */
 .doador-conteudo{
+    display: flex;
+    align-items: center;
+}
+.doador-doar{
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
@@ -75,9 +85,13 @@
     justify-items: center;
     width: 70%;
 }
+.doador-texto{
+    display: flex;
+    flex-direction: column;
+}
 .icon-doador{
     color: var(--verde-medio);
-    font-size: 7rem
+    font-size: 5rem
 }
 .doador-texto p{
     text-align: center;
@@ -92,16 +106,43 @@
 .doador-botao{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    width: 100%;
+}
+.doador-botao button{
+    width: 30%;
+}
+
+
+/* monitores grandes e desktops widescreen */
+@media (max-width: 1440px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* notebooks e monitores menores */
+@media (max-width: 1200px) {
+    .container{
+        max-width: 992px;
+    }
+     html{
+        font-size: 15px;
+    }
 }
 
 /* responsividade tablet */
-@media(max-width: 920px){
+@media(max-width: 992px){
     /* sessão: banner */
+    .banner .container-sessao-uma-coluna{
+        padding: 0;
+    }
     .banner .container-sessao-duas-colunas{
         display: flex;
         flex-direction: column-reverse;
         padding: 0 0 50px 0;
+    }
+    .banner-botoes button{
+        width: 25%;
     }
 
     /* sessão: projetos */
@@ -112,11 +153,28 @@
     
 }
 
-/* responsividade mobile */
-@media(max-width: 620px){
+/* celulares grandes e pequenos tablets */
+@media(max-width: 768px){
+    /* sessão: banner */
+    .banner-texto{
+        padding: 0 var(--space-1);
+    }
+    .banner-botoes{
+        width: 100%;
+        align-items: center;
+        gap: var(--space-1);
+        flex-direction: column;
+    }
+    .banner-botoes button{
+        width: 30%;
+    }
+
     /* sessão: projetos */
     .projetos .grid-tres-colunas{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .card-projeto{
+        width: 100%;
     }
 
     /* sessão: voluntariado */
@@ -128,4 +186,29 @@
     .doador-conteudo{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* celulares pequenos, retrato */
+@media (max-width: 480px) {
+    /* sessão: banner */
+    .banner-botoes button{
+        width: 50%;
+    }
+
+    /* sessão: voluntariado */
+    .voluntariado-cadastro-botao .botao-branco{
+        width: 100%;
+    }
+    .voluntariado-cadastro-botao .botao-branco{
+        width: 50%;
+    }
+
+    /* sessão: doador */
+    .doador-botao{
+        width: 100%;
+    }
+    .doador-botao .botao{
+        width: 50%;
+    }
+
 }
