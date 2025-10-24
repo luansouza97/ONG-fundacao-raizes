@@ -1,0 +1,191 @@
+
+/* banner */
+.cadastro{
+    display: grid;
+    background-color: var(--branco);
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 60%;
+    max-height: auto;
+    height: auto;
+    margin: 5vh auto;
+    align-items: center;
+    justify-items: center;
+    border-radius: var(--space-1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.cadastro-banner{
+    width: 100%;
+    height: 100%;
+    padding: var(--space-1);
+    border-radius: var(--space-1) 0 0 var(--space-1);
+}
+.cadastro-banner{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+}
+.cadastro-banner-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.cadastro-banner-imagem img{
+    transform: scale(1);
+    width: 100%;
+}
+.cadastro-banner-texto{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.cadastro-banner p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* formulario */
+.cadastro-formulario{
+    width: 100%;
+    background-color: rgba(224, 218, 218, 0.13);
+    border-radius: 0 var(--space-1) var(--space-1) 0;
+    padding: var(--space-0-5) 0;
+}
+.titulo-sessao{
+    padding: var(--space-0-5);
+}
+.cadastro-formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-0-5);
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border: none;
+    width: 100%;
+}
+fieldset legend{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.grupo-entradas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--space-0-5) var(--space-0-5);
+    gap: var(--space-0-5);
+    width: 100%;
+}
+.grupo-entradas div{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.grupo-entradas input{
+    width: 100%;
+    font-size: 1rem;
+    padding: var(--space-0-5) var(--space-0-5);
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(227, 235, 220);
+    outline: none;
+}
+.grupo-entradas input[type="date"]{
+    width: 100%;
+}
+.grupo-entradas select{
+    color: var(--textos);
+    font-size: 1rem;
+    padding: var(--space-0-5) var(--space-0-25);
+    border: none;
+    border-radius: var(--space-0-5);
+    background-color: rgb(227, 235, 220);
+    outline: none;
+}
+.grupo-entradas .entrada-nascimento{
+    justify-content: start;
+    align-items: start;
+}
+.botao{
+    margin: var(--space-0-5) 0;
+}
+
+/* monitores grandes e desktops widescreen */
+@media (max-width: 1440px) {
+}
+
+/* notebooks e monitores menores */
+@media (max-width: 1200px) {
+    html{
+        font-size: 15px;
+    }
+    .cadastro{
+        max-width: 70%;
+    }
+    /* sessão: formulário */
+    .grupo-entradas{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+}
+
+/* responsividade tablet */
+@media(max-width: 992px){
+    html{
+        font-size: 14px;
+    }
+    .cadastro{
+        max-width: 85%;
+    }
+    /* sessão: formulário */
+    .grupo-entradas{
+        width: 80%;
+    }
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+    .cadastro{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90%;
+    }
+    /* sessão: banner */
+    .cadastro-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-2);
+    }
+    .cadastro-banner-imagem{
+        width: 40%;
+    }
+
+    .cadastro-banner{
+        padding: 40px 0;
+    }
+
+    .grupo-entradas{
+        width: 90%;
+    }
+}
+
+/* celulares pequenos, retrato */
+@media (max-width: 480px) {
+    html{
+        font-size: 13px;
+    }
+    .cadastro{
+        max-width: 95%;
+    }
+    
+    .cadastro-banner-imagem{
+        padding: 0;
+    }
+    
+}
