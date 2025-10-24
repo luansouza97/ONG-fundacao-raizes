@@ -1,7 +1,4 @@
-/* Destaque do link "Início" no menu de navegação */
-.header__nav-menu li:nth-child(1){
-    border-bottom: 2px solid var(--verde-medio);
-}
+
 
 /* Estilização do banner principal */
 .banner {

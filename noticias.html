@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
+    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header__conteudo-header container">
-            <div class="header__logo">
-                <a href="index.html"><img src="assets/img/global/logo-170x90.png" alt="logo"></a>
-            </div>
-
-            <div class="header__menu">
+    <header class="header">
+        <div class="conteudo-header container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="assets/img/global/logo-170x90.png" alt="logo">
+                </a>
+                
+                <label for="menu-check" class="header__menu-hamburguer">
+                    <div class="icon-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                </label>
                 <div class="header__bt-cadastro">
                     <a href="cadastro.html">Junte-se a nós</a>
                 </div>
+            </div>           
+        </div>
 
-                <nav class="header__nav-menu">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="noticias.html">Notícias</a></li>
-                        <li><a href="quem-somos.html">Quem somos</a></li>
-                        <li><a href="transparencia.html">Transparência</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__menu-hamburguer">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        <input type="checkbox" id="menu-check" hidden >
+        <div class="header__menu">
+            <nav class="header__nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="quem-somos.html">Quem somos</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     

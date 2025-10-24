@@ -60,14 +60,13 @@ a{
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 .conteudo-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
+    padding: var(--space-0-25) var(--space-0-5);
     min-height: 13vh;
 }
 .header .header-logo{
-    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: auto;
 }
 .header .header-logo img{
@@ -76,8 +75,11 @@ a{
 }
 .header__menu{
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
+    padding: var(--space-0-5) 0;
+    transition: transform 0.3s;
 }
 .header__bt-cadastro{
     display: flex;
@@ -102,15 +104,15 @@ a{
 }
 .header__nav-menu a{
     padding-left: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .header__nav-menu a:hover{
-    border-bottom: 2px solid var(--verde-medio);
+    color: var(--verde-medio);
 }
 .header__menu-hamburguer{
     display: none;
 }
-.header__menu-hamburguer div{
+.header__menu-hamburguer .icon-menu div{
     width: 25px;
     height: 3px;
     margin: 5px;
@@ -166,11 +168,42 @@ footer{
 @media(max-width: 992px){
     
     /* Cabeçalho */
-    .header__menu{
+    .icon-menu{
+        cursor: pointer;
+    }
+    .header__bt-cadastro{
         display: none;
     }
-    .header__menu-hamburguer{
+    .header__menu{
+        position: absolute;
+        transform: translate(100%);
+        top: 15vh;
+        right: 0;
+        width: 50%;
+        height: 85vh;
+        background-color: var(--branco);
+        box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+    #menu-check:checked + .header__menu{
+        transform: translate(0%);
+    }
+    .header__menu ul{
         display: block;
+    }
+    .header__menu li{
+        display: flex;
+        justify-content: center;        
+    }
+    .header__menu a{
+        font-size: 2rem;
+    }
+
+    .header .header-logo{
+        width: 100%;
+    }
+    .header__menu-hamburguer{
+        display: flex;
+        align-items: center;
     }
 
     /* Rodapé */
