@@ -6,23 +6,37 @@
     text-decoration: none;
     list-style: none;
 }
+body{
+    background-color: var(--branco);
+    color: var(--textos);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+a{
+    color: var(--textos);
+}
 
 :root{
-    /* Cores primarias */
+    /* CORES DO SISTEMA */
+    
+    /* cores > primarias */
     --verde-escuro: rgb(50, 99, 68);
     --verde-medio: rgb(126, 180, 80);
     --verde-claro: rgb(167, 204, 57);
+    --verde-transparente: rgb(126, 180, 80, 0.3);
 
-    /* Cores secundárias */
+    /* cores > secundárias */
     --azul: rgb(80, 158, 178);
 
-    /* Cores neutras */
+    /* cores > neutras */
     --branco: rgb(255, 255, 255);
     --fundo-escuro: rgb(200, 200, 200);
+
+    /* cores > fontes */
     --titulos: rgb(86, 86, 86);
     --textos: rgb(125, 125, 125);
 
-    /* espaçamentos */
+    /* ESPAÇAMENTOS */
     --space-0-25: 0.25rem;
     --space-0-5: 0.5rem;
     --space-1: 1rem;
@@ -32,17 +46,14 @@
     --space-5: 4rem;
     --space-6: 5rem;
 
-}
-
-body{
-    background-color: var(--branco);
-    color: var(--textos);
-    font-family: 'Roboto', sans-serif;
+    /* FONTES */
     font-size: 16px;
-}
+    --titulo-pagina: 2rem;
+    --titulo-sessao: 2rem;
+    --titulo-card:1.2rem;
+    --titulo-dados: 0.8rem
 
-a{
-    color: var(--textos);
+
 }
 
 /* Centralização do conteído à página */
@@ -51,7 +62,7 @@ a{
     max-width: 1200px;
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
 .header{
     background-color: var(--branco);
     position: sticky;
@@ -61,8 +72,9 @@ a{
 }
 .conteudo-header{
     padding: var(--space-0-25) var(--space-0-5);
-    min-height: 13dvh;
+    height: 14dvh;
 }
+/* cabeçalho > logo */
 .header .header-logo{
     display: flex;
     align-items: center;
@@ -73,55 +85,61 @@ a{
     width: 100%;
     height: auto;
 }
+
+/* Cabeçalho > menu */
 .header__menu{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    padding: var(--space-0-5) 0;
     transition: transform 0.3s;
 }
-.header__bt-cadastro{
+.header__nav-menu{
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
-.header__bt-cadastro a{
-    padding: 5px 10px;
-    font-weight: 700;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+.header__nav-menu li{
+    float: left;
+}
+.header__nav-menu li a, label{
+    display: inline-block;
+    padding: 0 var(--space-1);
+    font-size: var(--titulo-card);
+    text-align: center;
+    padding: var(--space-0-5) var(--space-1);
+    transition: all 0.1s ease;
+}
+.header__nav-menu li a:hover, .header__nav-menu li label:hover, .bt-dropdown:hover > label{
     background-color: var(--verde-medio);
     color: var(--branco);
 }
-.header__bt-cadastro a:hover{
-    background-color: var(--verde-claro);
+.menu-dropdown{
+    position: absolute;
+    display: none;
+    justify-items: start;
+    background-color: var(--branco);
+    color: var(--branco);
+    box-shadow: 1px 4px 5px rgb(0, 0, 0, 0.3);
 }
-.header__nav-menu ul{
-    display: flex;
+.menu-dropdown a{
+    width: 100%;
 }
-.header__nav-menu li{
-    font-size: 1.5rem;
-    padding-left: 10px;
-    text-align: center;
-}
-.header__nav-menu li:hover{
-    color: var(--verde-medio);
+.bt-dropdown:hover .menu-dropdown{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 .header__menu-hamburguer{
     display: none;
 }
 .header__menu-hamburguer .icon-menu div{
-    width: 25px;
-    height: 3px;
-    margin: 5px;
+    width: var(--space-2);
+    height: var(--space-0-25);
+    margin: var(--space-0-25);
     background-color: var(--titulos);
 }
 
-/* rodapé */
+/* RODAPÉ */
 footer{
     background-color: var(--verde-escuro);
     color: var(--branco);
 }
+/* rodapé > titulo */
 .footer__title{
     display: flex;
     border-bottom: 1px solid var(--branco);  
@@ -136,9 +154,9 @@ footer{
     font-size: 1.5rem;
     text-align: center;
 }
-
+/* rodapé > grid de sessões */
 .footer__grid{
-    padding: 20px;
+    padding: var(--space-1)
 }
 .footer__grid aside{
     display: flex;
@@ -146,7 +164,7 @@ footer{
     text-align: center;
 }
 .footer__grid p{
-    margin: 10px 0;
+    margin: var(--space-0-5) 0;
 }
 .footer__grid a{
     color: var(--branco);
@@ -154,6 +172,9 @@ footer{
 .footer__grid a:hover{
     border-bottom: 1px solid var(--branco);
 }
+
+/* RESPONSIVIDADE */
+
 /* monitores grandes e desktops widescreen */
 @media (max-width: 1440px) {
     
@@ -165,51 +186,56 @@ footer{
 /* responsividade tablet */
 @media(max-width: 992px){
     
-    /* Cabeçalho */
+    /* CABEÇALHO */
+    .header .header-logo{
+        width: 100%;
+    }
+    .header-logo .box-botao{
+        display: none;
+    }
+    #menu-check:checked + .header__menu{
+        transform: translate(0%);
+    }
+    .header__menu-hamburguer{
+        display: flex;
+        align-items: center;
+    }
     .icon-menu{
         cursor: pointer;
-    }
-    .header__bt-cadastro{
-        display: none;
     }
     .header__menu{
         position: absolute;
         z-index: 999;
         transform: translate(100%);
-        top: 15dvh;
+        top: 14dvh;
         right: 0;
         width: 50%;
-        height: 85dvh;
+        height: 86dvh;
         background-color: var(--branco);
         box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3);
     }
-    #menu-check:checked + .header__menu{
-        transform: translate(0%);
-    }
+    
     .header__nav-menu{
         width: 100%;
     }
     .header__menu ul{
         display: flex;
         flex-direction: column;
-    }
-    .header__menu li{
-        width: 100%;
-        padding: var(--space-1) 0;    
-        font-size: 1.7rem;
-    }
-    .header__menu li:hover{
-        background-color: rgb(126, 180, 80, 0.3);
-    }
-    .header__menu a{
-    }
-    .header .header-logo{
         width: 100%;
     }
-    .header__menu-hamburguer{
-        display: flex;
-        align-items: center;
+    .header__menu li a, .header__menu label{
+        width: 100%;
     }
+    #projetos:checked + .menu-dropdown{
+        display: grid;
+    }
+    .menu-dropdown{
+        position: static;
+        box-shadow: none;
+        background-color: var(--verde-transparente);
+        color: var(--branco);
+    }
+    
 
     /* Rodapé */
     .footer .grid-quatro-colunas{

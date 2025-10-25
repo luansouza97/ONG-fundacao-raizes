@@ -1,7 +1,3 @@
-.header__nav-menu li:nth-child(2){
-    border-bottom: 2px solid var(--verde-medio);
-}
-
 /* banner */
 .banner{
     background-color: var(--verde-medio);
@@ -122,6 +118,9 @@
 
 /* notebooks e monitores menores */
 @media (max-width: 1200px) {
+    :root{
+        font-size: 15px;
+    }
     .container{
         max-width: 992px;
     }
@@ -132,6 +131,9 @@
 
 /* responsividade tablet */
 @media(max-width: 992px){
+    :root{
+        font-size: 14px;
+    }
     /* sessão: banner */
     .banner .container-sessao-uma-coluna{
         padding: 0;

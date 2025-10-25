@@ -1,4 +1,3 @@
-
 /* banner */
 .cadastro{
     display: grid;
@@ -39,10 +38,11 @@
     justify-content: center;
     align-items: start;
 }
-.cadastro-banner p{
-    font-size: 1.5rem;
+.cadastro-banner-texto p{
+    font-size: var(--titulo-sessao);
     text-align: center;
     font-weight: 300;
+    padding: 0 var(--space-0-25);
 }
 
 /* formulario */
@@ -116,13 +116,11 @@ fieldset legend{
 
 /* monitores grandes e desktops widescreen */
 @media (max-width: 1440px) {
+    
 }
 
 /* notebooks e monitores menores */
 @media (max-width: 1200px) {
-    html{
-        font-size: 15px;
-    }
     .cadastro{
         max-width: 70%;
     }
@@ -135,7 +133,7 @@ fieldset legend{
 
 /* responsividade tablet */
 @media(max-width: 992px){
-    html{
+    :root{
         font-size: 14px;
     }
     .cadastro{
@@ -148,9 +146,6 @@ fieldset legend{
 }
 
 @media(max-width: 768px){
-    html{
-        font-size: 14px;
-    }
     .cadastro{
         grid-template-columns: repeat(1, 1fr);
         max-width: 90%;
@@ -177,13 +172,9 @@ fieldset legend{
 
 /* celulares pequenos, retrato */
 @media (max-width: 480px) {
-    html{
-        font-size: 13px;
-    }
     .cadastro{
         max-width: 95%;
     }
-    
     .cadastro-banner-imagem{
         padding: 0;
     }
