@@ -112,10 +112,6 @@
     .header-logo .box-botao{
         display: none;
     }
-    #menu-check:checked + .header__menu{
-        transform: translate(0%);
-        box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3);
-    }
     .header__menu-hamburguer{
         display: flex;
         align-items: center;
@@ -124,14 +120,18 @@
         cursor: pointer;
     }
     .header__menu{
-        position: absolute;
+        position: fixed;
         z-index: 999;
-        transform: translate(100%);
+        transform: translateX(0);
         top: 14dvh;
         right: 0;
         width: 50%;
         height: 86dvh;
         background-color: var(--cor-verde-escuro);
+    }
+    #menu-check:checked + .header__menu{
+        transform: translateX(100%);
+        box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3);
     }
     
     .header__nav-menu{
