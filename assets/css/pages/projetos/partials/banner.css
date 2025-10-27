@@ -15,6 +15,10 @@
     display: flex;
     justify-content: space-around;
 }
+.banner-botoes .botao-branco{
+    text-align: center;
+    width: 35%;
+}
 .banner-imagem img{
     width: 100%;
     height: auto;
