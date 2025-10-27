@@ -38,7 +38,7 @@
 }
 .card-tags span{
     background-color: var(--cor-verde-transparente);
-    padding: var(--space-0-25)
+    padding: 2px;
 }
 
 /* CARD NOTÍCIAS */

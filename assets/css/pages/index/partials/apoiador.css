@@ -16,7 +16,7 @@
     align-items: center;
     gap: var(--space-1);
 }
-.apoiador__links button{
+.apoiador__links a{
     width: 8rem;
     padding: var(--space-2);
     align-items: center;

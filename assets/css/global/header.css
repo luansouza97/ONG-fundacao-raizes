@@ -42,6 +42,9 @@
     display: flex;
     justify-content: center;
 }
+.header__nav-menu .item-menu-cadastro{
+    display: none;
+}
 .header__nav-menu ul{
     background-color: inherit;
 }

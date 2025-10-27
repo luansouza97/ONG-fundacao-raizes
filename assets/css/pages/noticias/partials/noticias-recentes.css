@@ -4,6 +4,7 @@
 .noticias__recentes .text-h2{
     text-align: start;
     color: var(--textos);
+    margin-bottom: var(--space-1);
 }
 .noticias__recentes-artigos{
     display: flex;
