@@ -1,0 +1,10 @@
+@import '/assets/css/global/global.css';
+
+@import '/assets/css/pages/cadastro/partials/banner.css';
+@import '/assets/css/pages/cadastro/partials/formulario.css';
+
+@import '/assets/css/pages/cadastro/responsive/max-width-1440.css';
+@import '/assets/css/pages/cadastro/responsive/max-width-1200.css';
+@import '/assets/css/pages/cadastro/responsive/max-width-992.css';
+@import '/assets/css/pages/cadastro/responsive/max-width-768.css';
+@import '/assets/css/pages/cadastro/responsive/max-width-480.css';

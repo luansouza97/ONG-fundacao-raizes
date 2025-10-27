@@ -1,0 +1,9 @@
+/* notebooks e monitores menores */
+@media (max-width: 1200px) {
+    :root{
+        font-size: 15px;
+    }
+    .container{
+        max-width: 90%;
+    }
+}

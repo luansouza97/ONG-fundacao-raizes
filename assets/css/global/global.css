@@ -1,0 +1,22 @@
+/* VARIÁVEIS GLOBAIS */
+@import '/assets/css/global/variable.css';
+
+/* RESET DOS COMPONENTES */
+@import '/assets/css/global/reset.css';
+
+/* LAYOUTS */
+@import '/assets/css/global/layout/card.css';
+@import '/assets/css/global/layout/grid.css';
+@import '/assets/css/global/layout/sessao.css';
+
+/* FONTES */
+@import '/assets/css/global/fonts/fonts.css';
+
+/* COMPONENTES */
+@import '/assets/css/global/components/botoes.css';
+
+/* CABEÇALHO */
+@import '/assets/css/global/header.css';
+
+/* RODAPÉ */
+@import '/assets/css/global/footer.css';

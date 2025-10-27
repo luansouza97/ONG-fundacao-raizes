@@ -1,0 +1,11 @@
+@import '/assets/css/global/global.css';
+@import '/assets/css/pages/noticias/partials/noticias-conteudo.css';
+@import '/assets/css/pages/noticias/partials/noticias-recentes.css';
+@import '/assets/css/pages/noticias/partials/noticias-mais-visitadas.css';
+
+@import '/assets/css/pages/noticias/responsive/max-width-1440.css';
+@import '/assets/css/pages/noticias/responsive/max-width-1200.css';
+@import '/assets/css/pages/noticias/responsive/max-width-992.css';
+@import '/assets/css/pages/noticias/responsive/max-width-768.css';
+@import '/assets/css/pages/noticias/responsive/max-width-480.css';
+

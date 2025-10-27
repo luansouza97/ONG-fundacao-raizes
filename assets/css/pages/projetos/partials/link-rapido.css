@@ -1,0 +1,26 @@
+.link-rapido{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    width: 100%;
+    justify-self: start;
+}
+.link-rapido a{
+    position: absolute;
+    border-left: 3px solid var(--cor-verde-escuro);
+    color: var(--cor-texto);
+    background-color: var(--cor-branco);
+}
+.link-rapido a:hover{
+    border-bottom: 1px solid var(--cor-verde-escuro);
+
+}
+#planejados{
+    scroll-margin-top: 14dvh;
+}
+#andamento{
+    scroll-margin-top: 14dvh;
+}
+.link-rapido.container-sessao-uma-coluna{
+    padding: var(--space-3);
+}

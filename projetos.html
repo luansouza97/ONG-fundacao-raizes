@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/projetos.css">
+    <link rel="stylesheet" href="assets/css/pages/projetos/projetos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="conteudo-header container">
             <div class="header-logo">
-                <a href="index.html">
-                    <img src="assets/img/global/logo-170x90.png" alt="logo">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/global/arvore-logo-branco.png" alt="logo">
+                    Instituto Raízes
                 </a>
+
+                <input type="checkbox" id="menu-check" hidden >
+                <div class="header__menu">
+                    <nav class="header__nav-menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="bt-dropdown">
+                                <label for="projetos">Projetos</label>
+                                <input type="checkbox" id="projetos" hidden>
+                                <div class="menu-dropdown">
+                                    <a href="/projetos.html">Em desenvolvimento</a>
+                                    <a href="/projetos.html">Em andamento</a>
+                                </div>
+                            </li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 
                 <label for="menu-check" class="header__menu-hamburguer">
                     <div class="icon-menu">
@@ -25,32 +41,11 @@
                     </div>
                 </label>
                 <div class="box-botao">
-                    <a class="botao" href="cadastro.html">Junte-se a nós</a>
+                    <a class="botao-branco" href="cadastro.html">Junte-se a nós</a>
                 </div>
             </div>           
         </div>
 
-        <input type="checkbox" id="menu-check" hidden >
-        
-        <div class="header__menu">
-            <nav class="header__nav-menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="bt-dropdown">
-                        <label for="projetos">Projetos</label>
-                        <input type="checkbox" id="projetos" hidden>
-                        <div class="menu-dropdown">
-                            <a href="/projetos.html">Em desenvolvimento</a>
-                            <a href="/projetos.html">Em andamento</a>
-                            <a href="/projetos.html">Concluídos</a>
-                        </div>
-                    </li>
-                    <li><a href="noticias.html">Notícias</a></li>
-                    <li><a href="quem-somos.html">Quem somos</a></li>
-                    <li><a href="transparencia.html">Transparência</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
 
     <main>
@@ -59,8 +54,8 @@
             <div class="container-sessao-uma-coluna container">
                 <div class="container-sessao-duas-colunas">
                     <div class="banner-texto">
-                        <h1 class="text-h1">Transformando o meio ambiente com a força do voluntariado</h1>
-                        <p class="text-p">Conheça nossos projetos e descubra como você pode fazer parte desta mudança</p>
+                        <p class="texto-banner">Transformando o meio ambiente com a força do voluntariado</p>
+                        <p class="text-h2">Conheça nossos projetos e descubra como você pode fazer parte desta mudança</p>
                         <div class="banner-botoes">
                             <a class="botao-branco" href="/cadastro.html">Quero ser voluntário</a>
                             <button class="botao-branco">Quero doar</button>
@@ -73,14 +68,25 @@
             </div>
         </section>
 
+        <div class="link-rapido container container-sessao-uma-coluna">
+            <p><strong class="text-h2">Categorias</strong></p>
+            <div>
+                <a href="#planejados">Projetos Planejados</a>
+            </div>
+            <div>
+                <a href="#andamento">Projetos em Andamento</a>
+            </div>
+        </div>
+
         <!-- Projetos -->
         <section class="projetos">    
             <div class="conteudo-projetos container-sessao-uma-coluna container">
                 <!-- Título da sessão Projetos -->
                 <div>
-                    <h1 class="text-h1">Projetos</h1>
+                    <h1 class="text-h1" id="planejados">Projetos - Planejamento</h1>
                     <hr class="linha"><br>
                 </div>
+
                 <!-- Grid com cards dos projetos -->
                 <div class="grid-tres-colunas">
                     <article class="card-projeto">
@@ -89,6 +95,10 @@
                             <h3 class="text-h3">Reflorestamento Urbano</h3>
                             <p class="text-p">Este projeto visa plantar árvores em áreas urbanas para melhorar a qualidade do ar e proporcionar sombra.</p>
                         </div>
+                        <div class="card-tags">
+                            <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
+                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                        </div>
                         <button class="botao">Conhecer</button>
                     </article>
                     <article class="card-projeto">
@@ -96,6 +106,10 @@
                         <div class="card-projeto-text">
                             <h3 class="text-h3">Educação Ambiental nas Escolas</h3>
                             <p class="text-p">Este projeto leva educação ambiental para escolas públicas, promovendo a conscientização desde cedo.</p>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
+                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
                         </div>
                         <button class="botao">Conhecer</button>
                     </article>
@@ -105,13 +119,27 @@
                             <h3 class="text-h3">Limpeza de Rios e Lagos</h3>
                             <p class="text-p">Este projeto organiza mutirões para limpar rios e lagos, removendo lixo e poluentes.</p>
                         </div>
+                        <div class="card-tags">
+                            <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
+                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                        </div>
                         <button class="botao">Conhecer</button>
                     </article>
+                </div>
+                <div>
+                    <h2 class="text-h1" id="andamento">Projetos - Andamento</h2>
+                    <hr class="linha"><br>
+                </div>
+                <div class="grid-tres-colunas">
                     <article class="card-projeto">
                         <img src="assets/img/projetos/animais.avif" alt="Imagem do Projeto 4">
                         <div class="card-projeto-text">
                             <h3 class="text-h3">Conservação da Fauna Local</h3>
                             <p class="text-p">Este projeto trabalha na proteção e conservação de espécies nativas ameaçadas de extinção.</p>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
+                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
                         </div>
                         <button class="botao">Conhecer</button>
                     </article>
@@ -121,6 +149,10 @@
                              <h3 class="text-h3">Reflorestamento Urbano</h3>
                             <p class="text-p">Este projeto visa plantar árvores em áreas urbanas para melhorar a qualidade do ar e proporcionar sombra.</p>
                          </div>
+                         <div class="card-tags">
+                            <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
+                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                        </div>
                         <button class="botao">Conhecer</button>
                     </article>
                     <article class="card-projeto">
@@ -128,6 +160,10 @@
                         <div class="card-projeto-text">
                             <h3 class="text-h3">Educação Ambiental nas Escolas</h3>
                             <p class="text-p">Este projeto leva educação ambiental para escolas públicas, promovendo a conscientização desde cedo.</p>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
+                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
                         </div>
                         <button class="botao">Conhecer</button>
                     </article>
@@ -156,7 +192,9 @@
             <div class="doador-conteudo container-sessao-uma-coluna container">
                 <h2 class="text-h2">Como doar</h2>
                 <div class="doador-doar">
-                    <span class="icon-doador"><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                    <span class="icon-doador">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </span>
                     <div class="doador-texto">
                         <p class="text-p">Sua contribuição tornará possivel a realização de muitos projetos. Ajude a melhorar o nosso planeja.</p>
                         <div>
@@ -169,7 +207,7 @@
                     </div>
                 </div>
                 <div class="doador-botao">
-                    <button class="botao">Faça uma doação agora</button>
+                    <button class="botao">Doar</button>
                 </div>
             </div>
         </section>

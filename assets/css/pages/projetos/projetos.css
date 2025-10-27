@@ -1,0 +1,17 @@
+@import '/assets/css/global/global.css';
+@import '/assets/css/pages/projetos/partials/banner.css';
+@import '/assets/css/pages/projetos/partials/link-rapido.css';
+@import '/assets/css/pages/projetos/partials/projetos.css';
+@import '/assets/css/pages/projetos/partials/voluntariado.css';
+@import '/assets/css/pages/projetos/partials/doador.css';
+
+@import '/assets/css/pages/projetos/responsive/max-width-1440.css';
+@import '/assets/css/pages/projetos/responsive/max-width-1200.css';
+@import '/assets/css/pages/projetos/responsive/max-width-992.css';
+@import '/assets/css/pages/projetos/responsive/max-width-768.css';
+@import '/assets/css/pages/projetos/responsive/max-width-480.css';
+
+.header_menu li label{
+    border-bottom: 1px solid var(--branco);
+    background-color: var(--cor-verde-escuro-hover);
+}

@@ -1,0 +1,14 @@
+.grid-tres-colunas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-1);
+    justify-items: center;
+}
+
+.grid-quatro-colunas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-1);
+    justify-items: center;
+}
+

@@ -1,0 +1,61 @@
+/* responsividade tablet */
+@media(max-width: 992px){
+    :root{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 90%;
+    }
+    /* sessão: header */
+    .header .container{
+        max-width: 100%
+    }
+
+    /* Sessão : resultados */
+    .resultados .grid-quatro-colunas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* sessão: quem somos */
+    .quem-somos .container-sessao-duas-colunas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quem-somos-imagem img{
+        height: auto;
+    }
+    .quem-somos-botao{
+        padding: var(--space-1);
+    }
+
+    /* sessão projetos */
+    .text-h3{
+        margin-bottom: 0;
+    }
+
+    /* sessão: apoiador */
+    .apoiador__links li{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .apoiador__links li p{
+        text-align: center;
+        width: 100%;
+    }
+    .apoiador__links li button{
+        width: 60%;
+        padding: var(--space-1);
+        text-align: center;
+    }
+    .apoiador .container-sessao-duas-colunas{
+        align-items: center;
+    }
+
+    /* sessão: noticias */
+    .noticias .grid-quatro-colunas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-noticia-vertical{
+        display: flex;
+        flex-direction: column;
+    }
+}

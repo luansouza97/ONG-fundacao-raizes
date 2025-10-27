@@ -1,0 +1,42 @@
+:root{
+    /* CORES DO SISTEMA */
+    
+    /* cores > primarias */
+    --cor-verde-escuro: rgb(50, 99, 68);
+    --cor-verde-escuro-hover: rgb(67, 111, 83);
+    --cor-verde-medio: rgb(126, 180, 80);
+    --cor-verde-medio-hover: rgb(141, 194, 92);
+    --cor-verde-claro: rgb(167, 204, 57);
+    --cor-verde-transparente: rgb(126, 180, 80, 0.3);
+
+    /* cores > secundárias */
+    --cor-azul: rgb(80, 158, 178);
+
+    /* cores > neutras */
+    --cor-branco: rgb(255, 255, 255);
+    --cor-cinza: rgb(200, 200, 200);
+    --cor-fundo: rgb(50, 50, 50);
+
+    /* cores > fontes */
+    --cor-texto: rgb(86, 86, 86);
+
+    /* ESPAÇAMENTOS */
+    --space-0-25: 0.25rem;
+    --space-0-5: 0.5rem;
+    --space-1: 1rem;
+    --space-2: 1.5rem;
+    --space-3: 2rem;
+    --space-4: 3rem;
+    --space-5: 4rem;
+    --space-6: 5rem;
+
+    /* FONTES */
+    font-size: 16px;
+    --titulo-pagina: 2rem;
+    --titulo-banner: 3rem;
+    --titulo-sessao: 1.6rem;
+    --titulo-card:1.2rem;
+    --titulo-dados: 0.8rem
+
+
+}

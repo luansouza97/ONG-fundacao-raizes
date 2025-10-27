@@ -1,0 +1,27 @@
+/* responsividade tablet */
+@media(max-width: 992px){
+    :root{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 90%;
+    }
+    
+    /* sessão > banner */
+    .banner .container-sessao-uma-coluna{
+        padding: 0;
+    }
+    .banner .container-sessao-duas-colunas{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 0 50px 0;
+    }
+    .banner-botoes button{
+        width: 25%;
+    }
+
+    /* sessão: projetos */
+    .projetos .grid-tres-colunas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

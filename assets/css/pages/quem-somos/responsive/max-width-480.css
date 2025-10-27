@@ -1,0 +1,6 @@
+/* celulares pequenos, retrato */
+@media (max-width: 480px) {
+    .container{
+        max-width: 100%;
+    }
+}

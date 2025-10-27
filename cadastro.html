@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raízes | Cadastro</title>
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/pages/cadastro/cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <div class="conteudo-header container">
             <div class="header-logo">
-                <a href="index.html">
-                    <img src="assets/img/global/logo-170x90.png" alt="logo">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/global/arvore-logo-branco.png" alt="logo">
+                    Instituto Raízes
                 </a>
+
+                <input type="checkbox" id="menu-check" hidden >
+                <div class="header__menu">
+                    <nav class="header__nav-menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="bt-dropdown">
+                                <label for="projetos">Projetos</label>
+                                <input type="checkbox" id="projetos" hidden>
+                                <div class="menu-dropdown">
+                                    <a href="/projetos.html">Em desenvolvimento</a>
+                                    <a href="/projetos.html">Em andamento</a>
+                                </div>
+                            </li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 
                 <label for="menu-check" class="header__menu-hamburguer">
                     <div class="icon-menu">
@@ -25,32 +41,11 @@
                     </div>
                 </label>
                 <div class="box-botao">
-                    <a class="botao" href="cadastro.html">Junte-se a nós</a>
+                    <a class="botao-branco" href="cadastro.html">Junte-se a nós</a>
                 </div>
             </div>           
         </div>
 
-        <input type="checkbox" id="menu-check" hidden >
-        
-        <div class="header__menu">
-            <nav class="header__nav-menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="bt-dropdown">
-                        <label for="projetos">Projetos</label>
-                        <input type="checkbox" id="projetos" hidden>
-                        <div class="menu-dropdown">
-                            <a href="/projetos.html">Em desenvolvimento</a>
-                            <a href="/projetos.html">Em andamento</a>
-                            <a href="/projetos.html">Concluídos</a>
-                        </div>
-                    </li>
-                    <li><a href="noticias.html">Notícias</a></li>
-                    <li><a href="quem-somos.html">Quem somos</a></li>
-                    <li><a href="transparencia.html">Transparência</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
     
     <main>
@@ -58,7 +53,7 @@
             <!-- Banner da sessão de cadastro -->
             <div class="cadastro-banner">
                 <div class="cadastro-banner-imagem">
-                    <img src="assets/img/cadastro/arvore-300x340.png" alt="logo">
+                    <img src="assets/img/global/arvore-logo-branco.png" alt="logo">
                 </div>
                 <div class="cadastro-banner-texto">
                     <p>Juntos podemos fazer a diferença pelo futuro do planeta</p>

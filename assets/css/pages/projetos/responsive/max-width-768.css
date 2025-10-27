@@ -1,0 +1,42 @@
+/* celulares grandes e pequenos tablets */
+@media(max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+
+    /* sessão > banner */
+    .banner-texto{
+        padding: 0 var(--space-1);
+    }
+    .banner-botoes{
+        width: 100%;
+        align-items: center;
+        gap: var(--space-1);
+        flex-direction: column;
+    }
+    .banner-botoes button{
+        width: 30%;
+    }
+
+    /* sessão > projetos */
+    .projetos .grid-tres-colunas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-projeto{
+        width: 100%;
+    }
+    
+    /* sessã > voluntariado */
+    .voluntariado-cadastro{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+     /* sessão > doador */
+    .doador-conteudo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .doador-doar{
+        display: flex;
+        flex-direction: column;
+    }
+}

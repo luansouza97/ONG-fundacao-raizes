@@ -1,0 +1,38 @@
+.doador-conteudo{
+    display: flex;
+    align-items: center;
+}
+.doador-doar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 70%;
+}
+.doador-texto{
+    display: flex;
+    flex-direction: column;
+}
+.icon-doador{
+    color: var(--cor-verde-escuro);
+    font-size: 5rem
+}
+.doador-texto p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.doador-texto li{
+    font-size: var(--titulo-card);
+    margin-bottom: 10px;
+    margin-left: 40px;
+    list-style: square;
+}
+.doador-botao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.doador-botao button{
+    width: 20%;
+}

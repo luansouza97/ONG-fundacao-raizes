@@ -1,0 +1,17 @@
+.resultados{
+    background-color: var(--cor-verde-escuro);
+}
+.resultados .titulo-sessao h2{
+    color: var(--cor-branco);
+}
+.resultados-cards aside p:nth-child(1){
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--cor-branco);
+}
+.resultados-cards aside p:nth-child(2){
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--cor-branco);
+}

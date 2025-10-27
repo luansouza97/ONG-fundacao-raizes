@@ -1,0 +1,13 @@
+/* responsividade tablet */
+@media(max-width: 992px){
+    :root{
+        font-size: 14px;
+    }
+    .cadastro{
+        max-width: 85%;
+    }
+    /* sessão: formulário */
+    .grupo-entradas{
+        width: 80%;
+    }
+}

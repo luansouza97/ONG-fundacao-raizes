@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
-    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/pages/noticias/noticias.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="conteudo-header container">
             <div class="header-logo">
-                <a href="index.html">
-                    <img src="assets/img/global/logo-170x90.png" alt="logo">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/global/arvore-logo-branco.png" alt="logo">
+                    Instituto Raízes
                 </a>
+
+                <input type="checkbox" id="menu-check" hidden >
+                <div class="header__menu">
+                    <nav class="header__nav-menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="bt-dropdown">
+                                <label for="projetos">Projetos</label>
+                                <input type="checkbox" id="projetos" hidden>
+                                <div class="menu-dropdown">
+                                    <a href="/projetos.html">Em desenvolvimento</a>
+                                    <a href="/projetos.html">Em andamento</a>
+                                </div>
+                            </li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 
                 <label for="menu-check" class="header__menu-hamburguer">
                     <div class="icon-menu">
@@ -22,37 +41,16 @@
                     </div>
                 </label>
                 <div class="box-botao">
-                    <a class="botao" href="cadastro.html">Junte-se a nós</a>
+                    <a class="botao-branco" href="cadastro.html">Junte-se a nós</a>
                 </div>
             </div>           
         </div>
 
-        <input type="checkbox" id="menu-check" hidden >
-        
-        <div class="header__menu">
-            <nav class="header__nav-menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="bt-dropdown">
-                        <label for="projetos">Projetos</label>
-                        <input type="checkbox" id="projetos" hidden>
-                        <div class="menu-dropdown">
-                            <a href="/projetos.html">Em desenvolvimento</a>
-                            <a href="/projetos.html">Em andamento</a>
-                            <a href="/projetos.html">Concluídos</a>
-                        </div>
-                    </li>
-                    <li><a href="noticias.html">Notícias</a></li>
-                    <li><a href="quem-somos.html">Quem somos</a></li>
-                    <li><a href="transparencia.html">Transparência</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
     
     <main class="noticias">
         <!-- todo o conteúdo relacionado a notícias -->
-        <div class="conteudo-sessao container">
+        <div class="container-sessao-uma-coluna container">
 
             <div class="noticias__recentes-titulo">
                 <h1 class="text-h1">Notícias</h1><hr><br>
@@ -195,14 +193,14 @@
     
     <footer>
         <section class="footer">
-            <div class="footer__conteudo container">
+            <div class=" container-sessao-uma-coluna container">
                 <div class="footer__title">
                     <h3 class="text-h3">Fundação Raízes</h3>
                     <p class="pipe"> | </p>
                     <p>Cuidando da saúde do nosso planeta</p>
                 </div>
 
-                <div class="footer__grid grid">
+                <div class="footer__grid grid-quatro-colunas">
                     <aside>
                         <h3>Endereço</h3><br>
                         <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>

@@ -1,30 +1,4 @@
-.container-sessao-uma-coluna{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: var(--space-5) var(--space-3);
-    gap: var(--space-2);
-}
-.container-sessao-duas-colunas{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    gap: var(--space-3);
-}
-.grid-tres-colunas{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-1);
-    justify-items: center;
-}
-.grid-quatro-colunas{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-1);
-    justify-items: center;
-}
-
-/* card de projetos*/
+/* CARD PROJETO */
 .card-projeto{
     display: flex;
     flex-direction: column;
@@ -55,8 +29,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.card-tags{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: var(--space-1);
+}
+.card-tags span{
+    background-color: var(--cor-verde-transparente);
+    padding: var(--space-0-25)
+}
 
-/* card de notícias*/
+/* CARD NOTÍCIAS */
 .card-noticia{
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -64,6 +49,7 @@
     max-height: 30rem;
     background-color: var(--fundo-claro);
     padding: var(--space-1);
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
 }
 .card-noticia-vertical{
     display: grid;
@@ -72,6 +58,7 @@
     max-height: auto;
     background-color: var(--fundo-claro);
     padding: var(--space-0-5);
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
 }
 .card-noticia-imagem img{
     width: 100%;

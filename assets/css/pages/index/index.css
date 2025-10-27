@@ -1,0 +1,12 @@
+@import '/assets/css/global/global.css';
+@import '/assets/css/pages/index/partials/banner.css';
+@import '/assets/css/pages/index/partials/resultados.css';
+@import '/assets/css/pages/index/partials/quem-somos.css';
+@import '/assets/css/pages/index/partials/projetos.css';
+@import '/assets/css/pages/index/partials/apoiador.css';
+
+@import '/assets/css/pages/index/responsive/max-width-1440.css';
+@import '/assets/css/pages/index/responsive/max-width-1200.css';
+@import '/assets/css/pages/index/responsive/max-width-992.css';
+@import '/assets/css/pages/index/responsive/max-width-768.css';
+@import '/assets/css/pages/index/responsive/max-width-480.css';

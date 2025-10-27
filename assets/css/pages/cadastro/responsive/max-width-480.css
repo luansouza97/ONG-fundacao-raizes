@@ -1,0 +1,9 @@
+/* celulares pequenos, retrato */
+@media (max-width: 480px) {
+    .cadastro{
+        max-width: 95%;
+    }
+    .cadastro-banner-imagem{
+        padding: 0;
+    }
+}

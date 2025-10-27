@@ -1,0 +1,28 @@
+
+.quem-somos{
+    background-color: inherit;
+}
+.quem-somos-historia, .quem-somos-texto{
+    display: flex;
+    flex-direction: column;
+}
+.quem-somos-imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.quem-somos h1{
+    text-align: center;
+}
+.quem-somos h3{
+    font-size: 1.5rem;
+}
+.quem-somos p{
+    font-size: 1.2rem;
+}
+.quem-somos-botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
