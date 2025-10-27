@@ -1,17 +1,20 @@
-@import '/assets/css/global/global.css';
-@import '/assets/css/pages/projetos/partials/banner.css';
-@import '/assets/css/pages/projetos/partials/link-rapido.css';
-@import '/assets/css/pages/projetos/partials/projetos.css';
-@import '/assets/css/pages/projetos/partials/voluntariado.css';
-@import '/assets/css/pages/projetos/partials/doador.css';
+/* ESTILOS GLOBAIS */
+@import '../../global/global.css';
 
-@import '/assets/css/pages/projetos/responsive/max-width-1440.css';
-@import '/assets/css/pages/projetos/responsive/max-width-1200.css';
-@import '/assets/css/pages/projetos/responsive/max-width-992.css';
-@import '/assets/css/pages/projetos/responsive/max-width-768.css';
-@import '/assets/css/pages/projetos/responsive/max-width-480.css';
+/* SESSÕES */
+@import './partials/banner.css';
+@import './partials/link-rapido.css';
+@import './partials/projetos.css';
+@import './partials/voluntariado.css';
+@import './partials/doador.css';
 
-.header_menu li label{
-    border-bottom: 1px solid var(--branco);
-    background-color: var(--cor-verde-escuro-hover);
+/* RESPONSIVIDADE */
+@import './responsive/max-width-1440.css';
+@import './responsive/max-width-1200.css';
+@import './responsive/max-width-992.css';
+@import './responsive/max-width-768.css';
+@import './responsive/max-width-480.css';
+
+.header__nav-menu ul li:nth-child(2) label{
+    border-bottom: 2px solid var(--cor-branco);
 }

@@ -1,22 +1,22 @@
 /* VARIÁVEIS GLOBAIS */
-@import '/assets/css/global/variable.css';
+@import './variable.css';
 
 /* RESET DOS COMPONENTES */
-@import '/assets/css/global/reset.css';
+@import './reset.css';
 
 /* LAYOUTS */
-@import '/assets/css/global/layout/card.css';
-@import '/assets/css/global/layout/grid.css';
-@import '/assets/css/global/layout/sessao.css';
+@import './layout/card.css';
+@import './layout/grid.css';
+@import './layout/sessao.css';
 
 /* FONTES */
-@import '/assets/css/global/fonts/fonts.css';
+@import './fonts/fonts.css';
 
 /* COMPONENTES */
-@import '/assets/css/global/components/botoes.css';
+@import './components/botoes.css';
 
 /* CABEÇALHO */
-@import '/assets/css/global/header.css';
+@import './header.css';
 
 /* RODAPÉ */
-@import '/assets/css/global/footer.css';
+@import './footer.css';
