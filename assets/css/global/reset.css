@@ -9,9 +9,11 @@
 body{
   font-family: 'Open Sans', sans-serif;
   color: var(--cor-texto);
-  scroll-behavior: smooth;
   background-color: var(--cor-branco);
   font-size: 16px;
+}
+html{
+  scroll-behavior: smooth ;
 }
 a{
   color: inherit;

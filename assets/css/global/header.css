@@ -142,6 +142,11 @@
         flex-direction: column;
         width: 100%;
     }
+    
+    .header__nav-menu .item-menu-cadastro{
+        display: inline-block;
+    }
+
     .header__menu li a, .header__menu label{
         width: 100%;
         padding: var(--space-1);
