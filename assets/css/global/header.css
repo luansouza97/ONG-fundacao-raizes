@@ -115,14 +115,12 @@
     .header__menu-hamburguer{
         display: flex;
         align-items: center;
-    }
-    .icon-menu{
         cursor: pointer;
     }
     .header__menu{
         position: fixed;
         z-index: 999;
-        transform: translateX(0);
+        transform: translateX(100%);
         top: 14dvh;
         right: 0;
         width: 50%;
@@ -130,7 +128,7 @@
         background-color: var(--cor-verde-escuro);
     }
     #menu-check:checked + .header__menu{
-        transform: translateX(100%);
+        transform: translateX(0);
         box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3);
     }
     
