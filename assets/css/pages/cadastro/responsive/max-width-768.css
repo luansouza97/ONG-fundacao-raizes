@@ -1,0 +1,26 @@
+/* celulares grandes e pequenos tablets */
+@media(max-width: 768px){
+    .cadastro{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90%;
+    }
+    /* sessão: banner */
+    .cadastro-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-2);
+        border-radius: var(--space-1);
+    }
+    .cadastro-banner-imagem{
+        width: 40%;
+    }
+
+    .cadastro-banner{
+        padding: 40px 0;
+    }
+
+    .grupo-entradas{
+        width: 90%;
+    }
+}

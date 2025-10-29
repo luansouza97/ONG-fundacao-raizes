@@ -1,0 +1,27 @@
+/* celulares pequenos, retrato */
+@media (max-width: 480px) {
+    .container{
+        max-width: 100%;
+    }
+
+    /* sessão: banner */
+    .banner-botoes button{
+        width: 50%;
+    }
+
+    /* sessão: voluntariado */
+    .voluntariado-cadastro-botao .botao-branco{
+        width: 100%;
+    }
+    .voluntariado-cadastro-botao .botao-branco{
+        width: 50%;
+    }
+
+    /* sessão: doador */
+    .doador-botao{
+        width: 100%;
+    }
+    .doador-botao .botao{
+        width: 50%;
+    }
+}

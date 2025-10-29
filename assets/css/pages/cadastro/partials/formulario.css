@@ -1,0 +1,67 @@
+.cadastro-formulario{
+    width: 100%;
+    border-radius: 0 var(--space-1) var(--space-1) 0;
+    padding: var(--space-0-5) 0;
+}
+.titulo-sessao{
+    padding: var(--space-0-5);
+}
+.cadastro-formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-0-5);
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border: none;
+    width: 100%;
+}
+fieldset legend{
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.grupo-entradas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--space-0-5) var(--space-0-5);
+    gap: var(--space-0-5);
+    width: 100%;
+}
+.grupo-entradas div{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.grupo-entradas input{
+    width: 100%;
+    font-size: 1rem;
+    padding: var(--space-0-5) var(--space-0-5);
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(227, 235, 220);
+    outline: none;
+}
+.grupo-entradas input[type="date"]{
+    width: 100%;
+    color: var(--color-texto);
+}
+.grupo-entradas select{
+    color: var(--color-texto);
+    font-size: 1rem;
+    padding: var(--space-0-5) var(--space-0-25);
+    border: none;
+    border-radius: var(--space-0-5);
+    background-color: rgb(227, 235, 220);
+    outline: none;
+}
+.grupo-entradas .entrada-nascimento{
+    justify-content: start;
+    align-items: start;
+}
+.botao{
+    margin: var(--space-0-5) 0;
+}

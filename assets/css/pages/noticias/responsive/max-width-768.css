@@ -1,0 +1,6 @@
+/* celulares grandes e pequenos tablets */
+@media(max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+}

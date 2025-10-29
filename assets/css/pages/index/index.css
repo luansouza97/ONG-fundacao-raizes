@@ -1,0 +1,22 @@
+/* ESTILOS GLOBAIS */
+@import '../../global/global.css';
+
+/* SESSÕES */
+@import './partials/banner.css';
+@import './partials/resultados.css';
+@import './partials/quem-somos.css';
+@import './partials/projetos.css';
+@import './partials/apoiador.css';
+@import './partials/noticias.css';
+
+/* RESPONSIVIDADE */
+@import './responsive/max-width-1440.css';
+@import './responsive/max-width-1200.css';
+@import './responsive/max-width-992.css';
+@import './responsive/max-width-768.css';
+@import './responsive/max-width-480.css';
+
+.header__nav-menu ul li:nth-child(1) a{
+    border-bottom: 2px solid var(--cor-branco);
+}
+

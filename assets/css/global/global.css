@@ -1,0 +1,22 @@
+/* VARIÁVEIS GLOBAIS */
+@import './variable.css';
+
+/* RESET DOS COMPONENTES */
+@import './reset.css';
+
+/* LAYOUTS */
+@import './layout/card.css';
+@import './layout/grid.css';
+@import './layout/sessao.css';
+
+/* FONTES */
+@import './fonts/fonts.css';
+
+/* COMPONENTES */
+@import './components/botoes.css';
+
+/* CABEÇALHO */
+@import './header.css';
+
+/* RODAPÉ */
+@import './footer.css';

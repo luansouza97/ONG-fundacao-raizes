@@ -1,0 +1,13 @@
+/* ESTILOS GLOBAIS */
+@import '../../global/global.css';
+
+/* SESSÕES */
+@import './partials/banner.css';
+@import './partials/formulario.css';
+
+/* RESPONSIVIDADE */
+@import './responsive/max-width-1440.css';
+@import './responsive/max-width-1200.css';
+@import './responsive/max-width-992.css';
+@import './responsive/max-width-768.css';
+@import './responsive/max-width-480.css';

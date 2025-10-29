@@ -1,0 +1,26 @@
+/* celulares grandes e pequenos tablets */
+@media(max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+    /* Sessão : resultados */
+    .resultados .grid-quatro-colunas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* sessão: projetos */
+    .projetos .grid-tres-colunas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* sessão: apoiador */
+    .apoiador .container-sessao-duas-colunas{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* sessão: noticias */
+    .noticias .grid-quatro-colunas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

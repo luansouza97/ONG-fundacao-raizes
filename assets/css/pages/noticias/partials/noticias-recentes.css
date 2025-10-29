@@ -1,0 +1,18 @@
+.noticias__recentes{
+    display: grid;
+}
+.noticias__recentes .text-h2{
+    text-align: start;
+    color: var(--textos);
+    margin-bottom: var(--space-1);
+}
+.noticias__recentes-artigos{
+    display: flex;
+    flex-direction: column;
+}
+.card-noticia-text{
+    padding: var(--space-0-5);
+}
+.linha-h{
+    color: var(--branco);
+}
