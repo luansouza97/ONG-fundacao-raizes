@@ -106,8 +106,13 @@
     .container{
         max-width: 90%;
     }
+    .header .conteudo-header{
+        height: 10dvh;
+    }
     .header .header-logo{
         width: 100%;
+        height: 10dvh;
+        position: relative;
     }
     .header-logo .box-botao{
         display: none;
@@ -121,10 +126,10 @@
         position: fixed;
         z-index: 999;
         transform: translateX(100%);
-        top: 14dvh;
+        top: 10dvh;
         right: 0;
         width: 50%;
-        height: 86dvh;
+        height: 90dvh;
         background-color: var(--cor-verde-escuro);
     }
     #menu-check:checked + .header__menu{

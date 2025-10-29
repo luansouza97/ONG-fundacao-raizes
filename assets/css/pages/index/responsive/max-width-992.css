@@ -12,6 +12,14 @@
         max-width: 100%
     }
 
+    /* sessão: banner  */
+    .conteudo-banner{
+        height: 90dvh;
+    }
+    .banner{
+        height: 90dvh;
+    }
+
     /* Sessão : resultados */
     .resultados .grid-quatro-colunas{
         grid-template-columns: repeat(2, 1fr);

@@ -11,6 +11,11 @@
     height: 100%;
     object-fit: cover;
 }
+.quem-somos-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .quem-somos h1{
     text-align: center;
 }
