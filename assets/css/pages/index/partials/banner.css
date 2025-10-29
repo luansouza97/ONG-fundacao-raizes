@@ -1,14 +1,50 @@
 .conteudo-banner {
+    position: relative;
+    width: 100%;
+    height: 86dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.slide{
+    position: absolute;
     width: 100%;
     height: 100%;
-}
-.banner {
-    width: 100%;
-    max-height: 86dvh;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
     overflow: hidden;
 }
-.banner img {
+.slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.active{
+    opacity: 1;
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--cor-branco);
+    text-align: center;
+    background-color: rgb(1, 1, 1,0.7);
+    width: 100%;
+    height: 86dvh;
+    justify-content: center;
+}
+.banner h1{
+    font-size: 3.5rem;
+}
+.banner p{
+    font-size: 2rem;
 }
