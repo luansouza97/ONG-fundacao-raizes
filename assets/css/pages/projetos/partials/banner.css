@@ -1,4 +1,5 @@
 .banner{
+    position: inherit;
     background-color: var(--cor-verde-escuro);
 }
 .banner-texto{

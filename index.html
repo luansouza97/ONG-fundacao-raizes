@@ -6,14 +6,15 @@
     <title>Raízes</title>
     <link rel="stylesheet" href="./assets/css/pages/index/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script type="module" src="./index.js" defer></script>
 
-    <script src="./assets/js/pages/index/banner.js" defer></script>
+
 </head>
 <body>
     <header class="header">
         <div class="conteudo-header container">
             <div class="header-logo">
-                <a href="index.html" class="logo">
+                <a href="#home" class="logo">
                     <img src="assets/img/global/arvore-logo-branco.png" alt="logo">
                     Instituto Raízes
                 </a>
@@ -22,17 +23,17 @@
                 <div class="header__menu">
                     <nav class="header__nav-menu">
                         <ul>
-                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="#home">Inicio</a></li>
                             <li class="bt-dropdown">
                                 <label for="projetos">Projetos</label>
                                 <input type="checkbox" id="projetos" hidden>
                                 <div class="menu-dropdown">
-                                    <a href="./projetos.html">Em desenvolvimento</a>
-                                    <a href="./projetos.html">Em andamento</a>
+                                    <a href="#projetos">Em desenvolvimento</a>
+                                    <a href="#projetos">Em andamento</a>
                                 </div>
                             </li>
-                            <li><a href="./noticias.html">Notícias</a></li>
-                            <li class="item-menu-cadastro"><a href="./cadastro.html">Cadastro</a></li>
+                            <li><a href="#noticias">Notícias</a></li>
+                            <li class="item-menu-cadastro"><a href="#cadastro">Cadastro</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -44,7 +45,7 @@
                     </div>
                 </label>
                 <div class="box-botao">
-                    <a class="botao-branco" href="cadastro.html">Junte-se a nós</a>
+                    <a class="botao-branco" href="#cadastro">Junte-se a nós</a>
                 </div>
             </div>           
         </div>
@@ -52,215 +53,8 @@
     </header>
 
     <!-- Conteúdo principal da página -->
-    <main>
-        <!-- Banner principal da página -->
-         <div class="conteudo-banner">
-            <div class="slides">
-                <div class="slide">
-                    <img src="./assets/img/inicio/slide/imagem01.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/inicio/slide/imagem02.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/inicio/slide/imagem03.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="banner">
-                <h1 class="text-h1">Instituto Raízes</h1>
-                <p>Cuidando da saúde do nosso planeta</p>
-                <div class="box-botao">
-                    <a class="botao-branco" href="cadastro.html">Junte-se a nós</a>
-                </div>
-            </div>
-         </div>
-
-        <!-- Resultados obtidos com as ações da ONG -->
-        <section class="resultados">
-            <div class="container-sessao-uma-coluna container">
-                <div class="titulo-sessao">
-                    <h2 class="text-h2">Resultados</h2>
-                </div>
-                <div class="resultados-cards grid-quatro-colunas">
-                    <aside>
-                        <p>+1000</p>
-                        <p>Árvores plantadas</p>
-                    </aside>
-                    <aside>
-                        <p>+500</p>
-                        <p>Voluntários engajados</p>
-                    </aside>
-                    <aside>
-                        <p>+50</p>
-                        <p>Projetos realizados</p>
-                    </aside>
-                    <aside>
-                        <p>+200</p>
-                        <p>Comunidades beneficiadas</p>
-                    </aside>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sessão: quem somos -->
-        <section class="quem-somos">
-            <div class="container-sessao-uma-coluna container">
-                <div class="quem-somos-historia">
-                    <h2 class="text-h1">Conheça a Fundação Raízes</h2>
-                    <p class="text-p">A Fundação Raízes é uma entidade socioambientalista dedicada à conservação da natureza e à promoção da qualidade de vida em Ananindeua, no Pará. Em 2024, foi reconhecido como a Melhor ONG de Meio Ambiente e Sustentabilidade e está entre as 100 Melhores ONGs do Brasil, pelo Prêmio Melhores ONGs, organizado pela Certificadora Social e Ambev VOA..</p>
-                </div>
-                <div class="container-sessao-duas-colunas">
-                    <div class="quem-somos-imagem">
-                        <img src="./assets/img/inicio/banner-quem-somos.jpg" alt="">
-                    </div>
-                    <div class="quem-somos-texto">
-                        <div>
-                            <h3 class="text-h3">Missão</h3>
-                            <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-h3">visão</h3>
-                            <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
-                        </div>
-    
-                        <div>
-                            <h3 class="text-h3">valores</h3>
-                            <p class="text-p">Nossa missão é preservar o meio ambiente, promovendo a conscientização e ações práticas que garantam um futuro sustentável.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projetos em destaque -->
-        <section class="projetos">
-            <div class="container-sessao-uma-coluna container">
-                <div class="titulo-sessao">
-                    <h2 class="text-h2">Projetos</h2>
-                    <hr class="linha"><br>
-                </div>
-    
-                <div class="grid-tres-colunas">
-                    <article class="card-projeto">
-                        <img src="./assets/img/projetos/preservar-nascente.avif" alt="imagem ilustrativa">
-                        <h3 class="text-h3">Adote uma nascente</h3>
-                        <p class="text-p">Preservar e recuperar nascentes e margens de rios, envolvendo comunidades locais.</p>
-                        <button class="botao">Conhecer</button>
-                    </article>
+    <main id="root">
         
-                    <article class="card-projeto">
-                        <img src="./assets/img/projetos/lixo-zero.avif" alt="imagem ilustrativa">
-                        <h3 class="text-h3">Lixo zero na comunidade</h3>
-                        <p class="text-p">Reduzir a produção de resíduos sólidos e incentivar práticas de reciclagem e compostagem.</p>
-                        <button class="botao">Conhecer</button>
-                    </article>
-        
-                    <article class="card-projeto">
-                        <img src="./assets/img/projetos/educacao-ambiental.avif" alt="imagem ilustrativa">
-                        <h3 class="text-h3">Educação ambiental</h3>
-                        <p class="text-p">Formar crianças e jovens conscientes sobre sustentabilidade e preservação do meio ambiente.</p>
-                        <button class="botao">Conhecer</button>
-                        </article>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Apoiador -->
-        <section class="apoiador">
-            <div class="container-sessao-uma-coluna container">
-                <div class="titulo-sessao">
-                    <h2 class="text-h2">Seja um apoiador</h2>
-                    <hr class="linha"><br>
-                </div>
-
-                <div class="container-sessao-duas-colunas container">
-                    <div class="apoiador__links">    
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="cadastro.html" class="botao">Contribua</a>
-                                    <p>financeiramente para nossos projetos</p>
-                                </li>
-                                <li>
-                                    <a href="cadastro.html" class="botao">Participe</a>
-                                    <p>como voluntário em nossas ações</p>
-                                </li>
-                                <li>
-                                    <a href="cadastro.html" class="botao">Divulgue</a>
-                                    <p>nosso trabalho nas redes sociais</p>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>                
-    
-                    <div class="apoiador-imagem">
-                        <img src="./assets/img/inicio/banner-apoiador.avif" alt="imagem-sessao-apoiador">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ultimas notícias -->
-         <section class="noticias">
-            <div class="container-sessao-uma-coluna container">
-                <div class="titulo-sessao">
-                    <h2 class="text-h2">Últimas notícias</h2>
-                    <hr class="linha"><br>
-                </div>
-                <div class="grid-quatro-colunas">
-                    <a href="#">
-                        <article class="card-noticia-vertical">
-                            <div class="card-noticia-imagem">
-                                <img src="./assets/img/noticias/capanha-plantio-arvore-area-urbana.jpg" alt="imagem ilustrativa">
-                            </div>
-                            <div class="card-noticia-text">
-                                <h3 class="text-h3">Plantio de árvores em áreas urbanas</h3>
-                                <p class="text-p">A Fundação Raízes iniciou uma campanha para plantar 1000 árvores em áreas urbanas, visando melhorar a qualidade...</p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a href="#">
-                        <article class="card-noticia-vertical">
-                            <div class="card-noticia-imagem">
-                                <img src="./assets/img/noticias/campanha-educacao-ambiental.jpg" alt="imagem ilustrativa">
-                            </div>
-                            <div class="card-noticia-text">
-                                <h3 class="text-h3">Educação ambiental alcança 500 crianças</h3>
-                                <p class="text-p">Nos últimos seis meses, o projeto de educação ambiental da Fundação Raízes impactou mais de 500 crianças em...</p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a href="#">
-                        <article class="card-noticia-vertical">
-                            <div class="card-noticia-imagem">
-                                <img src="./assets/img/noticias/multirao-limpeza-recolhe-lixo.jpg" alt="imagem ilustrativa">
-                            </div>
-                            <div class="card-noticia-text">
-                                <h3 class="text-h3">Mutirão de limpeza recolhe 200 kg de lixo</h3>
-                                <p class="text-p">Um mutirão organizado pela Fundação Raízes conseguiu recolher 200 kg de lixo de rios e lagos, contribuindo...</p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a href="#">
-                        <article class="card-noticia-vertical">
-                            <div class="card-noticia-imagem">
-                                <img src="./assets/img/noticias/plantio-areas-degradadas.jpg" alt="Mutirão de plantio de árvores">
-                            </div>
-                            <div class="card-noticia-text">
-                                <h3 class="text-h3">Mutirão de plantio revitaliza área degradada</h3>
-                                <p class="text-p">Mais de 80 voluntários se reuniram para plantar 300 mudas de espécies nativas, recuperando um espaço público e...</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-            </div>
-         </section>
     </main>
     
     <footer>

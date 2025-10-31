@@ -32,3 +32,5 @@ function maskCep() {
         cep.value += '-';
     }
 }
+
+export { maskCpf, maskPhone, maskCep }
