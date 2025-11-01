@@ -3,6 +3,17 @@ import { maskCpf, maskPhone, maskCep } from "./assets/js/pages/cadastro/formular
 
 const root = document.querySelector("#root");
 
+function home() {
+  fetch("home.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("root").innerHTML = data
+            carrossel()
+        });
+}
+
+home();
+
 window.addEventListener("load", () => {
     switch (window.location.hash) {
     case "#home":
