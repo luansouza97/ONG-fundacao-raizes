@@ -2,8 +2,9 @@
 function maskCpf() {
     let cpf = document.getElementById('cpf');
 
-    if (cpf.value.length == 3 || cpf.value.length == 7) {
+    if (cpf.value.length == 3 || cpf.value.length == 7)  {
         cpf.value += '.';
+        console.log(cpf.value);
     }
 
     if (cpf.value.length == 11) {
@@ -27,10 +28,17 @@ function maskPhone() {
 
 function maskCep() {
     let cep = document.getElementById('cep');
+    document.addEventListener('keydown', (e) => {
+        if (e.key == 'Backspace') {
+            let cep = document.getElementById('cep');
+            cep.value = cep.value.slice(0, -1);
+        } else if (cep.value.length == 5) {
+            cep.value += '-';
+        }
+    });
+    
 
-    if (cep.value.length == 5) {
-        cep.value += '-';
-    }
+    
 }
 
 export { maskCpf, maskPhone, maskCep }
