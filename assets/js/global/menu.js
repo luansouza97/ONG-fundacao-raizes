@@ -6,11 +6,12 @@ const ul = document.querySelector('ul')
 
 
 document.addEventListener('click', (e) => {
-    
-    if(!menu.contains(e.target) && !btMenu.contains(e.target)){
-        menu.style.transform = 'translateX(100%)'
-    }
-    else{
-        menu.style.transform = 'translateX(0)'
+    if (ul.style.display == 'flex') {
+        if(!menu.contains(e.target) && !btMenu.contains(e.target)){
+            menu.style.transform = 'translateX(100%)'
+        }
+        else{
+            menu.style.transform = 'translateX(0)'
+        }
     }
 })

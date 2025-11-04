@@ -1,110 +1,97 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raízes | Cadastro</title>
-    <link rel="stylesheet" href="./assets/css/pages/cadastro/cadastro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script type="module" src="./assets/js/pages/cadastro/formulario.js" defer></script>
-</head>
-<body>    
-    <main>
-        <section class="cadastro ">
-            <!-- Banner da sessão de cadastro -->
-            <div class="cadastro-banner">
-                <div class="cadastro-banner-imagem">
-                    <img src="./assets/img/global/arvore-logo-branco.png" alt="logo">
-                </div>
-                <div class="cadastro-banner-texto">
-                    <p>Juntos podemos fazer a diferença pelo futuro do planeta</p>
-                </div>
+
+<main>
+    <section class="cadastro ">
+        <!-- Banner da sessão de cadastro -->
+        <div class="cadastro-banner">
+            <div class="cadastro-banner-imagem">
+                <img src="./assets/img/global/arvore-logo-branco.png" alt="logo">
             </div>
-            
-            <div class="cadastro-formulario">
-                <!-- titulo do formulário -->
-                <div class="titulo-sessao">
-                    <h2 class="text-h2">Seja um Voluntário</h2>
-                </div>
-
-                <!-- Formulário de cadastro -->
-                <form action="#" method="post" autocomplete="off">
-                    <fieldset class="cadastro__dados-pessoais">
-                        <legend>Dados pessoais</legend>
-                        <div class="grupo-entradas">
-                            <div class="entrada-nome">
-                                <input type="text" id="nome" name="nome" placeholder="Nome" title="Preencha com seu nome" required>
-                            </div>
-
-                            <div class="entrada-sobrenome">
-                                <input type="text" id="sobrenome" name="sobrenome" placeholder="sobrenome" title="Preencha com seu sobrenome" required>
-                            </div>
-                            
-                            <div class="entrada-email">
-                                <input type="email" id="email" name="email" placeholder="E-mail" title="Preencha com seu e-mail" required>
-                            </div>
-                
-                            <div class="entrada-cpf">
-                                <input type="text" onkeyup="maskCpf()" id="cpf" name="cpf" placeholder="CPF" maxlength="14" pattern="^\d{3}.\d{3}.\d{3}-\d{2}" title="Preencha no formato 000.000.000-00" required>
-                            </div>
-                
-                            <div class="entrada-telefone">
-                                <input type="tel" onkeyup="maskPhone()" id="phone" name="telefone" placeholder="Telefone" maxlength="15" pattern="^\(\d{2}\) \d{5}-\d{4}" title="Preencha no formato (99) 99999-9999" required>
-                            </div>
-                
-                            <div class="entrada-nascimento">
-                                <input type="date" id="nascimento" name="nascimento" title="Sua data de nascimento" placeholder="dd/mm/aaaa" required>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="cadastro__endereco">
-                        <legend>Endereço</legend>                        
-                        <div class="grupo-entradas">
-                            <div class="entrada-endereco">
-                                <input type="text" id="endereco" name="endereco" title="Preencha com seu endereço" placeholder="Endereço" required>
-                            </div>
-                
-                            <div class="entrada-cep">
-                                <input type="text" onkeyup="maskCep()" id="cep" name="cep" placeholder="CEP" maxlength="9" pattern="^\d{5}-\d{3}" title="Preencha no formato 00000-000" required>
-                            </div>
-                
-                            <div class="entrada-cidade">
-                                <input type="text" id="cidade" name="cidade" title="Preencha com sua cidade" placeholder="Cidade" required>
-                            </div>
-                
-                            <div class="entrada-estado">
-                                <input type="text" id="estado" name="estado" title="Preencha com seu estado" placeholder="Estado" required>
-                            </div>
-                        </div>
-            
-                    </fieldset>
-
-                    <fieldset class="cadastro__interesses">
-                        <legend>Interesses e Disponibilidade</legend>
-
-                        <div class="grupo-entradas">
-                            <div class="entrada-interesses">
-                                <select id="interesses" name="interesses" required>
-                                    <option value="" disabled selected>Selecione um interesse</option>
-                                    <option value="reflorestamento">Reflorestamento</option>
-                                    <option value="educacao-ambiental">Educação Ambiental</option>
-                                    <option value="limpeza-rios">Limpeza de Rios e Lagos</option>
-                                    <option value="conservacao-fauna">Conservação da Fauna</option>
-                                </select>
-                            </div>
-                            
-                            <div class="entrada-disponibilidade">
-                                <input type="text" id="disponibilidade" name="disponibilidade" placeholder="Dias e horário" required>
-                            </div>
-                        </div>
-                    </fieldset>
-            
-                    <input class="botao" type="submit" value="Enviar"></input>
-                </form>
+            <div class="cadastro-banner-texto">
+                <p>Juntos podemos fazer a diferença pelo futuro do planeta</p>
             </div>
-        </section>
-    </main>
-    
-</body>
-</html>
+        </div>
+        
+        <div class="cadastro-formulario">
+            <!-- titulo do formulário -->
+            <div class="titulo-sessao">
+                <h2 class="text-h2">Seja um Voluntário</h2>
+            </div>
+
+            <!-- Formulário de cadastro -->
+            <form action="#" method="post" autocomplete="off">
+                <fieldset class="cadastro__dados-pessoais">
+                    <legend>Dados pessoais</legend>
+                    <div class="grupo-entradas">
+                        <div class="entrada-nome">
+                            <input type="text" id="nome" name="nome" placeholder="Nome" title="Preencha com seu nome" required>
+                        </div>
+
+                        <div class="entrada-sobrenome">
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="sobrenome" title="Preencha com seu sobrenome" required>
+                        </div>
+                        
+                        <div class="entrada-email">
+                            <input type="email" id="email" name="email" placeholder="E-mail" title="Preencha com seu e-mail" required>
+                        </div>
+            
+                        <div class="entrada-cpf">
+                            <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" pattern="^\d{3}.\d{3}.\d{3}-\d{2}" title="Preencha no formato 000.000.000-00" required>
+                        </div>
+            
+                        <div class="entrada-telefone">
+                            <input type="tel" id="phone" name="telefone" placeholder="Telefone" maxlength="15" pattern="^\(\d{2}\) \d{5}-\d{4}" title="Preencha no formato (99) 99999-9999" required>
+                        </div>
+            
+                        <div class="entrada-nascimento">
+                            <input type="date" id="nascimento" name="nascimento" title="Sua data de nascimento" placeholder="dd/mm/aaaa" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="cadastro__endereco">
+                    <legend>Endereço</legend>                        
+                    <div class="grupo-entradas">
+                        <div class="entrada-endereco">
+                            <input type="text" id="endereco" name="endereco" title="Preencha com seu endereço" placeholder="Endereço" required>
+                        </div>
+            
+                        <div class="entrada-cep">
+                            <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" pattern="^\d{5}-\d{3}" title="Preencha no formato 00000-000" required>
+                        </div>
+            
+                        <div class="entrada-cidade">
+                            <input type="text" id="cidade" name="cidade" title="Preencha com sua cidade" placeholder="Cidade" required>
+                        </div>
+            
+                        <div class="entrada-estado">
+                            <input type="text" id="estado" name="estado" title="Preencha com seu estado" placeholder="Estado" required>
+                        </div>
+                    </div>
+        
+                </fieldset>
+
+                <fieldset class="cadastro__interesses">
+                    <legend>Interesses e Disponibilidade</legend>
+
+                    <div class="grupo-entradas">
+                        <div class="entrada-interesses">
+                            <select id="interesses" name="interesses" required>
+                                <option value="" disabled selected>Selecione um interesse</option>
+                                <option value="reflorestamento">Reflorestamento</option>
+                                <option value="educacao-ambiental">Educação Ambiental</option>
+                                <option value="limpeza-rios">Limpeza de Rios e Lagos</option>
+                                <option value="conservacao-fauna">Conservação da Fauna</option>
+                            </select>
+                        </div>
+                        
+                        <div class="entrada-disponibilidade">
+                            <input type="text" id="disponibilidade" name="disponibilidade" placeholder="Dias e horário" required>
+                        </div>
+                    </div>
+                </fieldset>
+        
+                <input class="botao" type="submit" value="Enviar"></input>
+            </form>
+        </div>
+    </section>
+</main>

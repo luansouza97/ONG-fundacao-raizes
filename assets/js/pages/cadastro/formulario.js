@@ -1,44 +1,32 @@
-// Máscara de cp
-function maskCpf() {
-    let cpf = document.getElementById('cpf');
-
-    if (cpf.value.length == 3 || cpf.value.length == 7)  {
-        cpf.value += '.';
-        console.log(cpf.value);
-    }
-
-    if (cpf.value.length == 11) {
-        cpf.value += '-';
-    }
+function maskCpf(event) {
+  let cpf = event.target;
+  cpf.value = cpf.value.replace(/\D/g, ""); // remove não-números
+  cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+  cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+  cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
 }
 
-//  Máscara de telefone
-function maskPhone() {
-    let cpf = document.getElementById('phone');
-
-    if (cpf.value.length == 2) {
-        let aux = cpf.value;
-        cpf.value = `(${aux}) `;
-    }
-
-    if (cpf.value.length == 10) {
-        cpf.value += '-';
-    }
+function maskPhone(event) {
+  let phone = event.target;
+  phone.value = phone.value.replace(/\D/g, "");
+  phone.value = phone.value.replace(/^(\d{2})(\d)/g, "($1) $2");
+  phone.value = phone.value.replace(/(\d{5})(\d{4})$/, "$1-$2");
 }
 
-function maskCep() {
-    let cep = document.getElementById('cep');
-    document.addEventListener('keydown', (e) => {
-        if (e.key == 'Backspace') {
-            let cep = document.getElementById('cep');
-            cep.value = cep.value.slice(0, -1);
-        } else if (cep.value.length == 5) {
-            cep.value += '-';
-        }
-    });
-    
-
-    
+function maskCep(event) {
+  let cep = event.target;
+  cep.value = cep.value.replace(/\D/g, "");
+  cep.value = cep.value.replace(/(\d{5})(\d{3})$/, "$1-$2");
 }
 
-export { maskCpf, maskPhone, maskCep }
+function applyMasks() {
+  const cpf = document.getElementById("cpf");
+  const phone = document.getElementById("phone");
+  const cep = document.getElementById("cep");
+
+  if (cpf) cpf.addEventListener("input", maskCpf);
+  if (phone) phone.addEventListener("input", maskPhone);
+  if (cep) cep.addEventListener("input", maskCep);
+}
+
+export { applyMasks };

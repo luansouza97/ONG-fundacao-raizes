@@ -1,5 +1,4 @@
 import { carrossel } from "./assets/js/pages/index/banner.js";
-import { maskCpf, maskPhone, maskCep } from "./assets/js/pages/cadastro/formulario.js";
 
 const root = document.querySelector("#root");
 
@@ -24,7 +23,6 @@ async function loadPage(namePage) {
 
 async function exibirPage(page) {
   root.innerHTML = await loadPage(page);
-  
 }
 
 (async () => {
@@ -35,26 +33,27 @@ async function exibirPage(page) {
 
 window.addEventListener('hashchange', renderPage)
 
-function renderPage(){
+async function renderPage(){
   switch (window.location.hash) {
     case "#home":
-      exibirPage('home');
+      await exibirPage('home');
       carrossel();
       break;
     case "#cadastro":
-      exibirPage('cadastro');
-      maskCpf();
-      maskPhone();
-      maskCep();
+      await exibirPage("cadastro");
+      import("./assets/js/pages/cadastro/formulario.js").then(module => {
+        module.applyMasks(); // aplica os eventos somente após o HTML estar no DOM
+      });
       break;
     case "#projetos":
-      exibirPage('projetos');
+      await exibirPage('projetos');
       break;
     case "#noticias":
-      exibirPage('noticias');
+      await exibirPage('noticias');
       break;
     default:
-      exibirPage('home');
+      await exibirPage('home');
+      carrossel();
       break;
   }
 }
