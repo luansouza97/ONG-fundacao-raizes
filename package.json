@@ -1,0 +1,19 @@
+{
+  "name": "raizes",
+  "version": "1.0.0",
+  "description": "Este é um site para uma ong de preservação ambiental, com a finalidade de publicar as atividades dos apoiadores, projetos, campanhas e atrair novos colaboradores para adotar a missão da ONG.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luansouza97/ONG-fundacao-raizes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luansouza97/ONG-fundacao-raizes/issues"
+  },
+  "homepage": "https://github.com/luansouza97/ONG-fundacao-raizes#readme"
+}
