@@ -5,7 +5,11 @@ const root = document.querySelector("#root");
 async function loadPage(namePage) {
   const page = await fetch(`${namePage}.html`);
 
-  document.querySelectorAll('link[rel="stylesheet"]').forEach(link => link.remove());
+  document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+    if (link.dataset.pageStyle === "true") {
+      link.remove()
+    }
+  });
   
   const cssPath = `./assets/css/pages/${namePage}/${namePage}.css`;
   fetch(cssPath, {method: 'HEAD'})
@@ -14,6 +18,7 @@ async function loadPage(namePage) {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
         link.href = cssPath;
+        link.dataset.pageStyle = "true";
         document.head.appendChild(link);
       }
     })

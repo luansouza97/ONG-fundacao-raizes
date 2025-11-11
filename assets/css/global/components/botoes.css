@@ -1,29 +1,56 @@
-.botao{
-    padding: var(--space-0-5) var(--space-2);
-    font-size: var(--titulo-card);
-    color: var(--cor-branco);
-    background-color: var(--cor-verde-escuro);
-    border: none;
-    border-radius: var(--space-0-25);
-    cursor: pointer;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+.botao {
+  padding: var(--space-0-5) var(--space-2);
+  font-size: var(--titulo-card);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde-escuro);
+  border: none;
+  border-radius: var(--space-0-25);
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
-.botao:hover{
-    background-color: var(--cor-verde-escuro-hover);
-    box-shadow: none;
+.botao:hover {
+  background-color: var(--cor-verde-escuro-hover);
+  box-shadow: none;
 }
-
-.botao-branco{
-    padding: var(--space-0-5) var(--space-2);
-    font-size: 1.2rem;
-    color: var(--cor-branco);
-    background-color: transparent;
-    border: 2px solid var(--cor-branco);
-    border-radius: 5px;
-    cursor: pointer;
+.botao-branco {
+  padding: var(--space-0-5) var(--space-2);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  background-color: transparent;
+  border: 2px solid var(--cor-branco);
+  border-radius: 5px;
+  cursor: pointer;
 }
-.botao-branco:hover{
-    background-color: var(--cor-branco);
-    color: var(--cor-verde-escuro);
-    box-shadow: none;
+.botao-branco:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-verde-escuro);
+  box-shadow: none;
+}
+.btModoEscuro {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: var(--space-1);
+  font-size: 1.2rem;
+  color: var(--cor-branco);
+  background-color: var(--cor-fundo);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btModoClaro {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: var(--space-1);
+  font-size: 1.2rem;
+  color: var(--cor-texto);
+  background-color: var(--cor-branco);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modoEscuro{
+  background-color: var(--cor-fundo);
+  color: var(--cor-branco);
 }
