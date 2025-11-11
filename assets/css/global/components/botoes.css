@@ -5,7 +5,6 @@
     background-color: var(--cor-verde-escuro);
     border: none;
     border-radius: var(--space-0-25);
-    outline: none;
     cursor: pointer;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
@@ -21,7 +20,6 @@
     background-color: transparent;
     border: 2px solid var(--cor-branco);
     border-radius: 5px;
-    outline: none;
     cursor: pointer;
 }
 .botao-branco:hover{

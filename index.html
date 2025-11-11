@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script type="module" src="./index.js" defer></script>
     <script src="./assets/js/global/menu.js" defer></script>
-    <link rel="stylesheet" href="./assets/css/pages/index/index.css">
+    <link rel="stylesheet" href="./assets/css/pages/home/home.css">
     <link rel="icon" href="./assets/img/global/arvore-logo.png">
 
 </head>
@@ -15,7 +15,7 @@
     <header class="header">
         <div class="conteudo-header container">
             <div class="header-logo">
-                <a href="#home" class="logo">
+                <a href="#home" class="logo" tabindex="-1">
                     <img src="assets/img/global/arvore-logo-branco.png" alt="logo">
                     Instituto Raízes
                 </a>
@@ -24,16 +24,16 @@
                 <div class="header__menu">
                     <nav class="header__nav-menu">
                         <ul>
-                            <li><a href="#home">Inicio</a></li>
+                            <li><a href="#home" tabindex="0">Inicio</a></li>
                             <li class="bt-dropdown">
-                                <label for="projetos">Projetos</label>
+                                <label for="projetos" tabindex="0">Projetos</label>
                                 <input type="checkbox" id="projetos" hidden>
                                 <div class="menu-dropdown">
-                                    <a href="#projetos">Em desenvolvimento</a>
-                                    <a href="#projetos">Em andamento</a>
+                                    <a href="#projetos" tabindex="0">Em desenvolvimento</a>
+                                    <a href="#projetos" tabindex="0">Em andamento</a>
                                 </div>
                             </li>
-                            <li><a href="#noticias">Notícias</a></li>
+                            <li><a href="#noticias" tabindex="0">Notícias</a></li>
                             <li class="item-menu-cadastro"><a href="#cadastro">Cadastro</a></li>
                         </ul>
                     </nav>
@@ -46,7 +46,7 @@
                     </div>
                 </label>
                 <div class="box-botao">
-                    <a class="botao-branco" href="#cadastro">Junte-se a nós</a>
+                    <a class="botao-branco" href="#cadastro" tabindex="0">Junte-se a nós</a>
                 </div>
             </div>           
         </div>

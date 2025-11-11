@@ -1,7 +1,7 @@
 .text-h1{
     font-size: var(--titulo-pagina);
     text-align: start;
-    margin-bottom: var(--space-2);
+    margin-bottom: var(--space-0-5);
 }
 .text-h2 {
     font-size: var(--titulo-sessao);

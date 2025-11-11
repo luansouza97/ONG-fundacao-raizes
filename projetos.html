@@ -1,168 +1,154 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
-    <link rel="stylesheet" href="./assets/css/pages/projetos/projetos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
-<body>
-
-    <main>
-        <!-- Banner com titulo e botões de ação para doar e voluntariar-se -->
-        <section class="banner">
-            <div class="container-sessao-uma-coluna container">
-                <div class="container-sessao-duas-colunas">
-                    <div class="banner-texto">
-                        <p class="texto-banner">Transformando o meio ambiente com a força do voluntariado</p>
-                        <p class="text-h2">Conheça nossos projetos e descubra como você pode fazer parte desta mudança</p>
-                        <div class="banner-botoes">
-                            <a class="botao-branco" href="./cadastro.html">Quero ajudar</a>
-                            <a href="./cadastro.html" class="botao-branco">Quero doar</a>
-                        </div>
+<main>
+    <!-- Banner com titulo e botões de ação para doar e voluntariar-se -->
+    <section class="banner">
+        <div class="container-sessao-uma-coluna container">
+            <div class="container-sessao-duas-colunas">
+                <div class="banner-texto">
+                    <p class="texto-banner">Transformando o meio ambiente com a força do voluntariado</p>
+                    <p class="text-h2">Conheça nossos projetos e descubra como você pode fazer parte desta mudança</p>
+                    <div class="banner-botoes">
+                        <a class="botao-branco" href="#cadastro" tabindex="0">Quero ajudar</a>
+                        <a href="#cadastro" class="botao-branco" tabindex="0">Quero doar</a>
                     </div>
-                    <div class="banner-imagem">
-                        <img src="./assets/img/projetos/banner.jpg" alt="banner">
-                    </div>
+                </div>
+                <div class="banner-imagem">
+                    <img src="./assets/img/projetos/banner.jpg" alt="banner">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projetos -->
-        <section class="projetos">    
-            <div class="conteudo-projetos container-sessao-uma-coluna container">
-                <!-- Título da sessão Projetos -->
-                <div>
-                    <h1 class="text-h1" id="planejados">Projetos - Planejamento</h1>
-                    <hr class="linha"><br>
-                </div>
+    <!-- Projetos -->
+    <section class="projetos">    
+        <div class="conteudo-projetos container-sessao-uma-coluna container">
+            <!-- Título da sessão Projetos -->
+            <div>
+                <h1 class="text-h1" id="planejados">Projetos - Planejamento</h1>
+                <hr class="linha"><br>
+            </div>
 
-                <!-- Grid com cards dos projetos -->
-                <div class="grid-tres-colunas">
+            <!-- Grid com cards dos projetos -->
+            <div class="grid-tres-colunas">
+                <article class="card-projeto">
+                    <img src="assets/img/projetos/preservar-nascente.avif" alt="Imagem do Projeto 1">
+                    <div class="card-projeto-text">
+                        <h3 class="text-h3">Reflorestamento Urbano</h3>
+                        <p class="text-p">Este projeto visa plantar árvores em áreas urbanas para melhorar a qualidade do ar e proporcionar sombra.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
+                        <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                    </div>
+                    <button class="botao" tabindex="0">Conhecer</button>
+                </article>
+                <article class="card-projeto">
+                    <img src="assets/img/projetos/educacao-ambiental.avif" alt="Imagem do Projeto 2">
+                    <div class="card-projeto-text">
+                        <h3 class="text-h3">Educação Ambiental nas Escolas</h3>
+                        <p class="text-p">Este projeto leva educação ambiental para escolas públicas, promovendo a conscientização desde cedo.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
+                        <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                    </div>
+                    <button class="botao" tabindex="0">Conhecer</button>
+                </article>
+                <article class="card-projeto">
+                    <img src="assets/img/projetos/preservar-nascente.avif" alt="Imagem do Projeto 3">
+                    <div class="card-projeto-text">
+                        <h3 class="text-h3">Limpeza de Rios e Lagos</h3>
+                        <p class="text-p">Este projeto organiza mutirões para limpar rios e lagos, removendo lixo e poluentes.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
+                        <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                    </div>
+                    <button class="botao" tabindex="0">Conhecer</button>
+                </article>
+            </div>
+            <div>
+                <h2 class="text-h1" id="andamento">Projetos - Andamento</h2>
+                <hr class="linha"><br>
+            </div>
+            <div class="grid-tres-colunas">
+                <article class="card-projeto">
+                    <img src="assets/img/projetos/animais.avif" alt="Imagem do Projeto 4">
+                    <div class="card-projeto-text">
+                        <h3 class="text-h3">Conservação da Fauna Local</h3>
+                        <p class="text-p">Este projeto trabalha na proteção e conservação de espécies nativas ameaçadas de extinção.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
+                        <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                    </div>
+                    <button class="botao" tabindex="0">Conhecer</button>
+                </article>
                     <article class="card-projeto">
                         <img src="assets/img/projetos/preservar-nascente.avif" alt="Imagem do Projeto 1">
                         <div class="card-projeto-text">
                             <h3 class="text-h3">Reflorestamento Urbano</h3>
-                            <p class="text-p">Este projeto visa plantar árvores em áreas urbanas para melhorar a qualidade do ar e proporcionar sombra.</p>
+                        <p class="text-p">Este projeto visa plantar árvores em áreas urbanas para melhorar a qualidade do ar e proporcionar sombra.</p>
                         </div>
                         <div class="card-tags">
-                            <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
-                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
-                        </div>
-                        <button class="botao">Conhecer</button>
-                    </article>
-                    <article class="card-projeto">
-                        <img src="assets/img/projetos/educacao-ambiental.avif" alt="Imagem do Projeto 2">
-                        <div class="card-projeto-text">
-                            <h3 class="text-h3">Educação Ambiental nas Escolas</h3>
-                            <p class="text-p">Este projeto leva educação ambiental para escolas públicas, promovendo a conscientização desde cedo.</p>
-                        </div>
-                        <div class="card-tags">
-                            <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
-                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
-                        </div>
-                        <button class="botao">Conhecer</button>
-                    </article>
-                    <article class="card-projeto">
-                        <img src="assets/img/projetos/preservar-nascente.avif" alt="Imagem do Projeto 3">
-                        <div class="card-projeto-text">
-                            <h3 class="text-h3">Limpeza de Rios e Lagos</h3>
-                            <p class="text-p">Este projeto organiza mutirões para limpar rios e lagos, removendo lixo e poluentes.</p>
-                        </div>
-                        <div class="card-tags">
-                            <span class="tag-status text-dados"><b>Status:</b> Em Planejamento</span>
-                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
-                        </div>
-                        <button class="botao">Conhecer</button>
-                    </article>
-                </div>
-                <div>
-                    <h2 class="text-h1" id="andamento">Projetos - Andamento</h2>
-                    <hr class="linha"><br>
-                </div>
-                <div class="grid-tres-colunas">
-                    <article class="card-projeto">
-                        <img src="assets/img/projetos/animais.avif" alt="Imagem do Projeto 4">
-                        <div class="card-projeto-text">
-                            <h3 class="text-h3">Conservação da Fauna Local</h3>
-                            <p class="text-p">Este projeto trabalha na proteção e conservação de espécies nativas ameaçadas de extinção.</p>
-                        </div>
-                        <div class="card-tags">
-                            <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
-                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
-                        </div>
-                        <button class="botao">Conhecer</button>
-                    </article>
-                     <article class="card-projeto">
-                         <img src="assets/img/projetos/preservar-nascente.avif" alt="Imagem do Projeto 1">
-                         <div class="card-projeto-text">
-                             <h3 class="text-h3">Reflorestamento Urbano</h3>
-                            <p class="text-p">Este projeto visa plantar árvores em áreas urbanas para melhorar a qualidade do ar e proporcionar sombra.</p>
-                         </div>
-                         <div class="card-tags">
-                            <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
-                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
-                        </div>
-                        <button class="botao">Conhecer</button>
-                    </article>
-                    <article class="card-projeto">
-                        <img src="assets/img/projetos/educacao-ambiental.avif" alt="Imagem do Projeto 2">
-                        <div class="card-projeto-text">
-                            <h3 class="text-h3">Educação Ambiental nas Escolas</h3>
-                            <p class="text-p">Este projeto leva educação ambiental para escolas públicas, promovendo a conscientização desde cedo.</p>
-                        </div>
-                        <div class="card-tags">
-                            <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
-                            <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
-                        </div>
-                        <button class="botao">Conhecer</button>
-                    </article>
+                        <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
+                        <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                    </div>
+                    <button class="botao" tabindex="0">Conhecer</button>
+                </article>
+                <article class="card-projeto">
+                    <img src="assets/img/projetos/educacao-ambiental.avif" alt="Imagem do Projeto 2">
+                    <div class="card-projeto-text">
+                        <h3 class="text-h3">Educação Ambiental nas Escolas</h3>
+                        <p class="text-p">Este projeto leva educação ambiental para escolas públicas, promovendo a conscientização desde cedo.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag-status text-dados"><b>Status:</b> Em Andamento</span>
+                        <span class="tag-participantes text-dados"><b>Participantes:</b> 13</span>
+                    </div>
+                    <button class="botao" tabindex="0">Conhecer</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- sessão voluntariado -->
+    <section class="voluntariado">
+        <div class="voluntariado-conteudo container-sessao-uma-coluna container">
+            <h2 class="text-h2">Seja voluntário</h2>
+            <div class="voluntariado-cadastro">                    
+                <span class="icon-voluntario"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <div class="voluntariado-cadastro-texto">
+                    <p class="text-p">Clique no botão abaixo e venha fazer parte de algo maior.</p>
                 </div>
             </div>
-        </section>
+            <div class="voluntariado-cadastro-botao">
+                <a href="#cadastro" class="botao-branco" tabindex="0">Participar</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- sessão voluntariado -->
-        <section class="voluntariado">
-            <div class="voluntariado-conteudo container-sessao-uma-coluna container">
-                <h2 class="text-h2">Seja voluntário</h2>
-                <div class="voluntariado-cadastro">                    
-                    <span class="icon-voluntario"><i class="fa-solid fa-hand-holding-heart"></i></span>
-                    <div class="voluntariado-cadastro-texto">
-                        <p class="text-p">Clique no botão abaixo e venha fazer parte de algo maior.</p>
+    <!-- sessão doador -->
+    <section class="doador">
+        <div class="doador-conteudo container-sessao-uma-coluna container">
+            <h2 class="text-h2">Como doar</h2>
+            <div class="doador-doar">
+                <span class="icon-doador">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </span>
+                <div class="doador-texto">
+                    <p class="text-p">Sua contribuição tornará possivel a realização de muitos projetos. Ajude a melhorar o nosso planeja.</p>
+                    <div>
+                        <ul>
+                            <li>Doação via Pix</li>
+                            <li>Doação recorrente (mensal)</li>
+                            <li>Apoio corporativo</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="voluntariado-cadastro-botao">
-                    <a href="./cadastro.html" class="botao-branco">Participar</a>
-                </div>
             </div>
-        </section>
-
-        <!-- sessão doador -->
-        <section class="doador">
-            <div class="doador-conteudo container-sessao-uma-coluna container">
-                <h2 class="text-h2">Como doar</h2>
-                <div class="doador-doar">
-                    <span class="icon-doador">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </span>
-                    <div class="doador-texto">
-                        <p class="text-p">Sua contribuição tornará possivel a realização de muitos projetos. Ajude a melhorar o nosso planeja.</p>
-                        <div>
-                            <ul>
-                                <li>Doação via Pix</li>
-                                <li>Doação recorrente (mensal)</li>
-                                <li>Apoio corporativo</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="doador-botao">
-                    <a href="./cadastro.html" class="botao">Doar</a>
-                </div>
+            <div class="doador-botao">
+                <a href="#cadastro" class="botao" tabindex="0">Doar</a>
             </div>
-        </section>
-    </main>
-
-</body>
-</html>
+        </div>
+    </section>
+</main>
